@@ -47,7 +47,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(211, 9);
+            this.label1.Location = new System.Drawing.Point(249, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(225, 45);
             this.label1.TabIndex = 0;
@@ -59,7 +59,7 @@
             this.pictureBox1.Image = global::BugTrackingSystem.Properties.Resources.Bugs;
             this.pictureBox1.Location = new System.Drawing.Point(9, 56);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(336, 359);
+            this.pictureBox1.Size = new System.Drawing.Size(337, 359);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -78,10 +78,11 @@
             // 
             // lblRegister
             // 
-            this.lblRegister.AutoSize = true;
-            this.lblRegister.Location = new System.Drawing.Point(40, 170);
+            this.lblRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegister.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.lblRegister.Location = new System.Drawing.Point(52, 168);
             this.lblRegister.Name = "lblRegister";
-            this.lblRegister.Size = new System.Drawing.Size(72, 13);
+            this.lblRegister.Size = new System.Drawing.Size(107, 23);
             this.lblRegister.TabIndex = 5;
             this.lblRegister.Text = "Are you new?";
             // 
@@ -108,6 +109,7 @@
             // 
             // btnLogin
             // 
+            this.btnLogin.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnLogin.Location = new System.Drawing.Point(64, 112);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
@@ -136,7 +138,7 @@
             this.button1.BackColor = System.Drawing.Color.DarkRed;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.button1.Location = new System.Drawing.Point(453, 362);
+            this.button1.Location = new System.Drawing.Point(568, 377);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 38);
             this.button1.TabIndex = 3;

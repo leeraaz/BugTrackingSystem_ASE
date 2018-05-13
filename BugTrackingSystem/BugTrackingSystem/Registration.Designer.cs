@@ -230,10 +230,10 @@
             this.radioOther.AutoSize = true;
             this.radioOther.Location = new System.Drawing.Point(165, 175);
             this.radioOther.Name = "radioOther";
-            this.radioOther.Size = new System.Drawing.Size(51, 17);
+            this.radioOther.Size = new System.Drawing.Size(87, 17);
             this.radioOther.TabIndex = 20;
             this.radioOther.TabStop = true;
-            this.radioOther.Text = "Other";
+            this.radioOther.Text = "Not specified";
             this.radioOther.UseVisualStyleBackColor = true;
             // 
             // btnSave
@@ -270,7 +270,8 @@
             this.cmbUserType.Items.AddRange(new object[] {
             "Admin",
             "Programmer",
-            "Developer"});
+            "Developer",
+            "Tester"});
             this.cmbUserType.Location = new System.Drawing.Point(165, 255);
             this.cmbUserType.Name = "cmbUserType";
             this.cmbUserType.Size = new System.Drawing.Size(100, 21);
