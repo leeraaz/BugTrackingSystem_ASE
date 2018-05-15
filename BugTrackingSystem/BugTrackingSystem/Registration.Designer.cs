@@ -53,6 +53,8 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.lblUsertype = new System.Windows.Forms.Label();
             this.cmbUserType = new System.Windows.Forms.ComboBox();
+            this.datePick = new System.Windows.Forms.DateTimePicker();
+            this.lblDOB = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -105,7 +107,7 @@
             // lblContact
             // 
             this.lblContact.AutoSize = true;
-            this.lblContact.Location = new System.Drawing.Point(54, 199);
+            this.lblContact.Location = new System.Drawing.Point(54, 237);
             this.lblContact.Name = "lblContact";
             this.lblContact.Size = new System.Drawing.Size(64, 13);
             this.lblContact.TabIndex = 5;
@@ -114,7 +116,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(54, 226);
+            this.lblEmail.Location = new System.Drawing.Point(54, 264);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(35, 13);
             this.lblEmail.TabIndex = 6;
@@ -123,7 +125,7 @@
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Location = new System.Drawing.Point(54, 285);
+            this.lblUsername.Location = new System.Drawing.Point(54, 323);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(55, 13);
             this.lblUsername.TabIndex = 7;
@@ -132,7 +134,7 @@
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(54, 319);
+            this.lblPassword.Location = new System.Drawing.Point(54, 357);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(53, 13);
             this.lblPassword.TabIndex = 8;
@@ -141,7 +143,7 @@
             // lblRePassword
             // 
             this.lblRePassword.AutoSize = true;
-            this.lblRePassword.Location = new System.Drawing.Point(54, 346);
+            this.lblRePassword.Location = new System.Drawing.Point(54, 384);
             this.lblRePassword.Name = "lblRePassword";
             this.lblRePassword.Size = new System.Drawing.Size(69, 13);
             this.lblRePassword.TabIndex = 9;
@@ -170,35 +172,35 @@
             // 
             // txtContact
             // 
-            this.txtContact.Location = new System.Drawing.Point(165, 199);
+            this.txtContact.Location = new System.Drawing.Point(165, 237);
             this.txtContact.Name = "txtContact";
             this.txtContact.Size = new System.Drawing.Size(100, 20);
             this.txtContact.TabIndex = 13;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(165, 226);
+            this.txtEmail.Location = new System.Drawing.Point(165, 264);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(100, 20);
             this.txtEmail.TabIndex = 14;
             // 
             // txtUsernameR
             // 
-            this.txtUsernameR.Location = new System.Drawing.Point(165, 285);
+            this.txtUsernameR.Location = new System.Drawing.Point(165, 323);
             this.txtUsernameR.Name = "txtUsernameR";
             this.txtUsernameR.Size = new System.Drawing.Size(100, 20);
             this.txtUsernameR.TabIndex = 15;
             // 
             // txtPasswordR
             // 
-            this.txtPasswordR.Location = new System.Drawing.Point(165, 319);
+            this.txtPasswordR.Location = new System.Drawing.Point(165, 357);
             this.txtPasswordR.Name = "txtPasswordR";
             this.txtPasswordR.Size = new System.Drawing.Size(100, 20);
             this.txtPasswordR.TabIndex = 16;
             // 
             // txtRePassword
             // 
-            this.txtRePassword.Location = new System.Drawing.Point(165, 346);
+            this.txtRePassword.Location = new System.Drawing.Point(165, 384);
             this.txtRePassword.Name = "txtRePassword";
             this.txtRePassword.Size = new System.Drawing.Size(100, 20);
             this.txtRePassword.TabIndex = 17;
@@ -238,16 +240,17 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(73, 386);
+            this.btnSave.Location = new System.Drawing.Point(73, 424);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 21;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(165, 386);
+            this.btnCancel.Location = new System.Drawing.Point(165, 424);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 22;
@@ -258,7 +261,7 @@
             // lblUsertype
             // 
             this.lblUsertype.AutoSize = true;
-            this.lblUsertype.Location = new System.Drawing.Point(57, 255);
+            this.lblUsertype.Location = new System.Drawing.Point(57, 293);
             this.lblUsertype.Name = "lblUsertype";
             this.lblUsertype.Size = new System.Drawing.Size(56, 13);
             this.lblUsertype.TabIndex = 23;
@@ -272,17 +275,35 @@
             "Programmer",
             "Developer",
             "Tester"});
-            this.cmbUserType.Location = new System.Drawing.Point(165, 255);
+            this.cmbUserType.Location = new System.Drawing.Point(165, 293);
             this.cmbUserType.Name = "cmbUserType";
             this.cmbUserType.Size = new System.Drawing.Size(100, 21);
             this.cmbUserType.TabIndex = 25;
             this.cmbUserType.Text = "User Type";
             // 
+            // datePick
+            // 
+            this.datePick.Location = new System.Drawing.Point(165, 198);
+            this.datePick.Name = "datePick";
+            this.datePick.Size = new System.Drawing.Size(200, 20);
+            this.datePick.TabIndex = 26;
+            // 
+            // lblDOB
+            // 
+            this.lblDOB.AutoSize = true;
+            this.lblDOB.Location = new System.Drawing.Point(54, 198);
+            this.lblDOB.Name = "lblDOB";
+            this.lblDOB.Size = new System.Drawing.Size(36, 13);
+            this.lblDOB.TabIndex = 27;
+            this.lblDOB.Text = "D.O.B";
+            // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(351, 438);
+            this.ClientSize = new System.Drawing.Size(383, 471);
+            this.Controls.Add(this.lblDOB);
+            this.Controls.Add(this.datePick);
             this.Controls.Add(this.cmbUserType);
             this.Controls.Add(this.lblUsertype);
             this.Controls.Add(this.btnCancel);
@@ -342,5 +363,7 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label lblUsertype;
         private System.Windows.Forms.ComboBox cmbUserType;
+        private System.Windows.Forms.DateTimePicker datePick;
+        private System.Windows.Forms.Label lblDOB;
     }
 }

@@ -18,3 +18,9 @@ F:\Softwarica\sem 5\ASE\New folder\BugTrackingSystem\BugTrackingSystem\obj\Debug
 F:\Softwarica\sem 5\ASE\New folder\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.Properties.Resources.resources
 F:\Softwarica\sem 5\ASE\New folder\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.Registration.resources
 F:\Softwarica\sem 5\ASE\New folder\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.csproj.GenerateResource.Cache
+F:\Softwarica\sem 5\ASE\New folder\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.BugReport.resources
+F:\Softwarica\sem 5\ASE\New folder\BugTrackingSystem\BugTrackingSystem\bin\Debug\MySql.Data.dll
+F:\Softwarica\sem 5\ASE\New folder\BugTrackingSystem\BugTrackingSystem\bin\Debug\MySql.Data.xml
+F:\Softwarica\sem 5\ASE\New folder\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.AdminPanel.resources
+F:\Softwarica\sem 5\ASE\New folder\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.DeveloperPanel.resources
+F:\Softwarica\sem 5\ASE\New folder\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.TesterPanel.resources
