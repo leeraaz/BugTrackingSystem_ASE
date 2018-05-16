@@ -14,13 +14,13 @@ namespace BugTrackingSystem
 {
     public partial class Registration : Form
     {
-        DatabaseConnection ins = new DatabaseConnection();
+        DatabaseConnection db = new DatabaseConnection();
+        //MySqlConnection DBConnect;
         public Registration()
         {
             InitializeComponent();
         }
-
-        public MySqlConnection DBConnect { get; private set; }
+        
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
@@ -29,7 +29,7 @@ namespace BugTrackingSystem
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            
+
 
             string firstName = Convert.ToString(txtFirstName.Text);
             string lastName = Convert.ToString(txtLastName.Text);
@@ -38,18 +38,33 @@ namespace BugTrackingSystem
             string dob = Convert.ToString(datePick.Text);
             string contact = Convert.ToString(txtContact.Text);
             string email = Convert.ToString(txtContact.Text);
-            string uname = Convert.ToString(txtEmail.Text);
-            string pwd = Convert.ToString(txtPasswordR.Text);
+            string uname = txtUsernameR.Text;
+            string pwd = txtPasswordR.Text;
             string rpwd = Convert.ToString(txtRePassword.Text);
 
-            //MessageBox.Show("First Name" + firstName);
-            string query = "insert into testUser (Username,Password) values (" + uname + "," + pwd + ");";
-            ins.OpenConnection();
-            MySqlCommand cmd = new MySqlCommand(query, DBConnect);
-            MySqlDataReader inscmd = cmd.ExecuteReader();
-
-            MessageBox.Show("User inserted successfully");
             
+            //MessageBox.Show("First Name" + firstName);
+            string query = "insert into testuser(Username,Password) values('" + uname + "','" + pwd + "');";
+            
+            db.DBConnect = db.DBConnection();   
+            MySqlCommand cmd = new MySqlCommand(query, db.DBConnect);
+            try
+            {
+                //MySqlDataReader inscmd = cmd.ExecuteReader();
+                int num = cmd.ExecuteNonQuery();
+                if (num > 0)
+                {
+                    MessageBox.Show("User inserted successfully");
+                }
+                else
+                {
+                    MessageBox.Show("Data not inserted");
+                }
+            }
+            catch(MySqlException er)
+            {
+                MessageBox.Show(er.Message);
+            }
         }
     }
 }

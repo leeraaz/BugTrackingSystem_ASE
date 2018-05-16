@@ -27,5 +27,13 @@ namespace BugTrackingSystem
             Registration register = new Registration();
             register.Show();
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string user = txtUsername.Text;
+            string pass = txtPassword.Text;
+
+            string sql = "insert into testuser(Usename,Password) values (" + user + "," + pass + ");";
+        }
     }
 }

@@ -17,52 +17,24 @@ namespace BugTrackingSystem
         private string uid;
         private string pwd;
 
-        public void DBConnection()
+        public MySqlConnection DBConnection()
         {
             /*  server = "localhost";
               database = "bugtracker";
               uid = "root";
               pwd = "";*/
-           string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=bugtracker;";
+            string connectionString = "datasource=localhost;username=root;password=;database=bugtracker; SSLmode=none;";
             DBConnect = new MySqlConnection(connectionString);
-        }
 
-        
-        public bool OpenConnection()
-        {
             try
             {
                 DBConnect.Open();
-                return true;
             }
-            catch (MySqlException ex)
+            catch(Exception e)
             {
-                switch (ex.Number)
-                {
-                    case 0:
-                        MessageBox.Show("Cannot connect to server.  Contact administrator");
-                        break;
-
-                    case 1045:
-                        MessageBox.Show("Invalid username/password, please try again");
-                        break;
-                }
-                return false;
+                MessageBox.Show(e.Message);
             }
+            return DBConnect;
         }
-
-        private bool CloseConnection()
-        {
-            try
-            {
-                DBConnect.Close();
-                return true;
-            }
-            catch (MySqlException ex)
-            {
-                MessageBox.Show(ex.Message);
-                return false;
-            }
-        }
-    }
+    }    
 }
