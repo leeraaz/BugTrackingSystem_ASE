@@ -33,8 +33,8 @@ namespace BugTrackingSystem
             string lastName = Convert.ToString(txtLastName.Text);
             string address = Convert.ToString(txtAdd.Text);
             string gender;
-            string dob = datePick.Text;
-            string contact = txtContact.Text;
+            string dob = datePick.Value.ToShortDateString();
+            string contact = Convert.ToString(txtContact.Text);
             string email = Convert.ToString(txtEmail.Text);
             string usertype = Convert.ToString(cmbUserType.Text);
             string uname = Convert.ToString(txtUsernameR.Text);
@@ -125,8 +125,7 @@ namespace BugTrackingSystem
                 db.DBConnect = db.DBConnection();
                 MySqlCommand ret = new MySqlCommand(sqlcmd, db.DBConnect);
                 MySqlDataReader reader = ret.ExecuteReader();
-                int count = (int)ret.ExecuteScalar();
-                if (count > 0)
+                if (reader.HasRows)
                 {
                     MessageBox.Show(checkuser + " alreadt in use. Try another user name.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txtUsernameR.Clear();
@@ -139,11 +138,11 @@ namespace BugTrackingSystem
                     //MessageBox.Show("First Name " + firstName + " Last name " + lastName + " address " + address + " gender " + gender +
                     //                " DOB " + dob + " contact " + contact + " email " + email + " usertype " + usertype + " username " + uname + " password " + pwd);
 
-                    string query = "insert into staff(First_Name,Last_Name,Address,Gender,Date_0f_Birth,Contact_No,Email,User_Type,Username,Password)" +
+                    string query = "insert into staff(First_Name,Last_Name,Address,Gender,Date_of_Birth,Contact_No,Email,User_Type,Username,Password)" +
                                     "values('" + firstName + "','" + lastName + "','" + address + "','" + gender + "','" + dob + "'," +
                                     "'" + contact + "','" + email + "','" + usertype + "','" + uname + "','" + pwd + "');";
 
-                    //db.DBConnect = db.DBConnection();
+                    db.DBConnect = db.DBConnection();
                     MySqlCommand cmd = new MySqlCommand(query, db.DBConnect);
                     try
                     {
@@ -151,7 +150,7 @@ namespace BugTrackingSystem
                         int num = cmd.ExecuteNonQuery();
                         if (num > 0)
                         {
-                            MessageBox.Show("Staff inserted successfully.");
+                            MessageBox.Show("Staff inserted successfully.");                           
                         }
                         else
                         {

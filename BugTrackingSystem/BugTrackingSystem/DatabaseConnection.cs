@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace BugTrackingSystem
 {
     public class DatabaseConnection
     {
         public MySqlConnection DBConnect;
-        private string server;
-        private string database;
-        private string uid;
-        private string pwd;
+        MySqlCommand cmd = new MySqlCommand();
+        MySqlDataAdapter da = new MySqlDataAdapter();
+        DataTable dt = new DataTable();
 
         public MySqlConnection DBConnection()
         {
@@ -30,11 +31,12 @@ namespace BugTrackingSystem
             {
                 DBConnect.Open();
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 MessageBox.Show(e.Message);
             }
             return DBConnect;
         }
+        
     }    
 }

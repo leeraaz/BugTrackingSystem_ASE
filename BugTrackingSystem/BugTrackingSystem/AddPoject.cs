@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace BugTrackingSystem
 {
-    public partial class TesterPanel : Form
+    public partial class AddPoject : Form
     {
-        public TesterPanel()
+        public AddPoject()
         {
             InitializeComponent();
         }
 
-        private void btnLogoutT_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            Dashboard dash = new Dashboard();
-            dash.Show();
+            AdminPanel ap = new AdminPanel();
+            ap.Show();
             this.Close();
         }
     }

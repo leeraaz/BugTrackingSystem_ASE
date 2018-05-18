@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace BugTrackingSystem
 {
-    public partial class DeveloperPanel : Form
+    public partial class ProgrammerPanel : Form
     {
-        public DeveloperPanel()
+        public ProgrammerPanel()
         {
             InitializeComponent();
-        }
-
-        private void btnReportD_Click(object sender, EventArgs e)
-        {
-            ReportingBugDeveloper rbd = new ReportingBugDeveloper();
-            rbd.Show();
         }
 
         private void btnLogoutD_Click(object sender, EventArgs e)
