@@ -99,5 +99,10 @@ namespace BugTrackingSystem
                 txtDescription.Clear();
             }
         }
+
+        private void ReportingBugDeveloper_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

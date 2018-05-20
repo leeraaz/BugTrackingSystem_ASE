@@ -147,7 +147,7 @@
             this.txtClassFile.Location = new System.Drawing.Point(211, 108);
             this.txtClassFile.Name = "txtClassFile";
             this.txtClassFile.ReadOnly = true;
-            this.txtClassFile.Size = new System.Drawing.Size(115, 26);
+            this.txtClassFile.Size = new System.Drawing.Size(231, 26);
             this.txtClassFile.TabIndex = 57;
             // 
             // txtMethod
@@ -156,7 +156,7 @@
             this.txtMethod.Location = new System.Drawing.Point(211, 145);
             this.txtMethod.Name = "txtMethod";
             this.txtMethod.ReadOnly = true;
-            this.txtMethod.Size = new System.Drawing.Size(115, 26);
+            this.txtMethod.Size = new System.Drawing.Size(231, 26);
             this.txtMethod.TabIndex = 56;
             // 
             // txtLine
@@ -165,7 +165,7 @@
             this.txtLine.Location = new System.Drawing.Point(211, 182);
             this.txtLine.Name = "txtLine";
             this.txtLine.ReadOnly = true;
-            this.txtLine.Size = new System.Drawing.Size(115, 26);
+            this.txtLine.Size = new System.Drawing.Size(231, 26);
             this.txtLine.TabIndex = 55;
             // 
             // lblLine
@@ -260,9 +260,9 @@
             // 
             this.cmbProject.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbProject.FormattingEnabled = true;
-            this.cmbProject.Location = new System.Drawing.Point(690, 27);
+            this.cmbProject.Location = new System.Drawing.Point(534, 33);
             this.cmbProject.Name = "cmbProject";
-            this.cmbProject.Size = new System.Drawing.Size(98, 28);
+            this.cmbProject.Size = new System.Drawing.Size(235, 28);
             this.cmbProject.TabIndex = 68;
             this.cmbProject.SelectedIndexChanged += new System.EventHandler(this.cmbProject_SelectedIndexChanged);
             // 
@@ -272,14 +272,14 @@
             this.txtProject.Location = new System.Drawing.Point(211, 73);
             this.txtProject.Name = "txtProject";
             this.txtProject.ReadOnly = true;
-            this.txtProject.Size = new System.Drawing.Size(115, 26);
+            this.txtProject.Size = new System.Drawing.Size(231, 26);
             this.txtProject.TabIndex = 69;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(503, 30);
+            this.label2.Location = new System.Drawing.Point(557, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(181, 20);
             this.label2.TabIndex = 70;

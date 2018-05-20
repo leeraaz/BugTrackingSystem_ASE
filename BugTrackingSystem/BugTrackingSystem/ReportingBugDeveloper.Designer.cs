@@ -218,7 +218,7 @@
             // 
             this.lblExpectedRe.AutoSize = true;
             this.lblExpectedRe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExpectedRe.Location = new System.Drawing.Point(75, 345);
+            this.lblExpectedRe.Location = new System.Drawing.Point(75, 348);
             this.lblExpectedRe.Name = "lblExpectedRe";
             this.lblExpectedRe.Size = new System.Drawing.Size(141, 20);
             this.lblExpectedRe.TabIndex = 38;
@@ -306,6 +306,7 @@
             this.Controls.Add(this.txtcode);
             this.Name = "ReportingBugDeveloper";
             this.Text = "ReportingBugDeveloper";
+            this.Load += new System.EventHandler(this.ReportingBugDeveloper_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

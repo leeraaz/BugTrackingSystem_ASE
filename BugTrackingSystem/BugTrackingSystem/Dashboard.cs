@@ -86,11 +86,34 @@ namespace BugTrackingSystem
                     this.Hide();
                 }
             }
+            else
+            {
+                MessageBox.Show("Incorrect username and password","Message",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                txtUsername.Clear();
+                txtPassword.Clear();
+            }
         }
         private void btnCancel_Click(object sender, EventArgs e)
         {
             txtUsername.Clear();
             txtPassword.Clear();
+        }
+
+        private void checkPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkPassword.Checked)
+            {
+                txtPassword.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                txtPassword.UseSystemPasswordChar = false;
+            }
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

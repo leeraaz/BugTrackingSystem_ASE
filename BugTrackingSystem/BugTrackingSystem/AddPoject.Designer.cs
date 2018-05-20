@@ -96,7 +96,7 @@
             // txtProjectName
             // 
             this.txtProjectName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProjectName.Location = new System.Drawing.Point(148, 61);
+            this.txtProjectName.Location = new System.Drawing.Point(201, 61);
             this.txtProjectName.Name = "txtProjectName";
             this.txtProjectName.Size = new System.Drawing.Size(200, 26);
             this.txtProjectName.TabIndex = 5;
@@ -106,7 +106,7 @@
             this.startDate.CustomFormat = "yyyy-MM-dd";
             this.startDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.startDate.Location = new System.Drawing.Point(148, 88);
+            this.startDate.Location = new System.Drawing.Point(201, 88);
             this.startDate.Name = "startDate";
             this.startDate.Size = new System.Drawing.Size(200, 26);
             this.startDate.TabIndex = 7;
@@ -116,7 +116,7 @@
             this.estiDate.CustomFormat = "yyyy-MM-dd";
             this.estiDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.estiDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.estiDate.Location = new System.Drawing.Point(148, 128);
+            this.estiDate.Location = new System.Drawing.Point(201, 128);
             this.estiDate.Name = "estiDate";
             this.estiDate.Size = new System.Drawing.Size(200, 26);
             this.estiDate.TabIndex = 8;
@@ -141,7 +141,7 @@
             "Java",
             "C Sharp",
             "HTML"});
-            this.cmbProjectType.Location = new System.Drawing.Point(148, 163);
+            this.cmbProjectType.Location = new System.Drawing.Point(201, 163);
             this.cmbProjectType.Name = "cmbProjectType";
             this.cmbProjectType.Size = new System.Drawing.Size(200, 28);
             this.cmbProjectType.TabIndex = 10;
@@ -172,7 +172,7 @@
             // 
             this.cmbUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbUser.FormattingEnabled = true;
-            this.cmbUser.Location = new System.Drawing.Point(148, 197);
+            this.cmbUser.Location = new System.Drawing.Point(201, 197);
             this.cmbUser.Name = "cmbUser";
             this.cmbUser.Size = new System.Drawing.Size(200, 28);
             this.cmbUser.TabIndex = 13;
@@ -181,7 +181,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(375, 311);
+            this.ClientSize = new System.Drawing.Size(415, 324);
             this.Controls.Add(this.cmbUser);
             this.Controls.Add(this.btnCancelN);
             this.Controls.Add(this.btnSaveN);
@@ -197,6 +197,7 @@
             this.Controls.Add(this.lblProjectType);
             this.Name = "AddPoject";
             this.Text = "AddPoject";
+            this.Load += new System.EventHandler(this.AddPoject_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

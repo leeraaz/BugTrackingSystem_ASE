@@ -90,7 +90,7 @@
             this.txtProject.Location = new System.Drawing.Point(223, 101);
             this.txtProject.Name = "txtProject";
             this.txtProject.ReadOnly = true;
-            this.txtProject.Size = new System.Drawing.Size(115, 26);
+            this.txtProject.Size = new System.Drawing.Size(234, 26);
             this.txtProject.TabIndex = 99;
             // 
             // cmbProject
@@ -99,7 +99,7 @@
             this.cmbProject.FormattingEnabled = true;
             this.cmbProject.Location = new System.Drawing.Point(573, 18);
             this.cmbProject.Name = "cmbProject";
-            this.cmbProject.Size = new System.Drawing.Size(98, 28);
+            this.cmbProject.Size = new System.Drawing.Size(266, 28);
             this.cmbProject.TabIndex = 98;
             this.cmbProject.SelectedIndexChanged += new System.EventHandler(this.cmbProject_SelectedIndexChanged);
             // 
@@ -109,7 +109,7 @@
             this.txtReportBy.Location = new System.Drawing.Point(223, 210);
             this.txtReportBy.Name = "txtReportBy";
             this.txtReportBy.ReadOnly = true;
-            this.txtReportBy.Size = new System.Drawing.Size(115, 26);
+            this.txtReportBy.Size = new System.Drawing.Size(234, 26);
             this.txtReportBy.TabIndex = 97;
             // 
             // label1
@@ -128,7 +128,7 @@
             this.txtClassFile.Location = new System.Drawing.Point(223, 146);
             this.txtClassFile.Name = "txtClassFile";
             this.txtClassFile.ReadOnly = true;
-            this.txtClassFile.Size = new System.Drawing.Size(115, 26);
+            this.txtClassFile.Size = new System.Drawing.Size(234, 26);
             this.txtClassFile.TabIndex = 89;
             // 
             // txtMethod
@@ -137,7 +137,7 @@
             this.txtMethod.Location = new System.Drawing.Point(223, 180);
             this.txtMethod.Name = "txtMethod";
             this.txtMethod.ReadOnly = true;
-            this.txtMethod.Size = new System.Drawing.Size(115, 26);
+            this.txtMethod.Size = new System.Drawing.Size(234, 26);
             this.txtMethod.TabIndex = 88;
             // 
             // lblMethod
@@ -194,7 +194,7 @@
             this.txtFix.Location = new System.Drawing.Point(223, 246);
             this.txtFix.Name = "txtFix";
             this.txtFix.ReadOnly = true;
-            this.txtFix.Size = new System.Drawing.Size(115, 26);
+            this.txtFix.Size = new System.Drawing.Size(234, 26);
             this.txtFix.TabIndex = 107;
             // 
             // lblFixby
@@ -213,7 +213,7 @@
             this.txtReportID.Location = new System.Drawing.Point(223, 58);
             this.txtReportID.Name = "txtReportID";
             this.txtReportID.ReadOnly = true;
-            this.txtReportID.Size = new System.Drawing.Size(115, 26);
+            this.txtReportID.Size = new System.Drawing.Size(234, 26);
             this.txtReportID.TabIndex = 108;
             // 
             // lblUsernames
@@ -241,7 +241,7 @@
             this.txtDate.Location = new System.Drawing.Point(223, 282);
             this.txtDate.Name = "txtDate";
             this.txtDate.ReadOnly = true;
-            this.txtDate.Size = new System.Drawing.Size(115, 26);
+            this.txtDate.Size = new System.Drawing.Size(234, 26);
             this.txtDate.TabIndex = 112;
             // 
             // lblDate

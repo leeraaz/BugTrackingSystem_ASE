@@ -38,6 +38,7 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.checkPassword = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.loginPanel.SuspendLayout();
             this.SuspendLayout();
@@ -65,6 +66,7 @@
             // 
             // loginPanel
             // 
+            this.loginPanel.Controls.Add(this.checkPassword);
             this.loginPanel.Controls.Add(this.lblRegister);
             this.loginPanel.Controls.Add(this.RegisterLink);
             this.loginPanel.Controls.Add(this.btnCancel);
@@ -154,6 +156,17 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // checkPassword
+            // 
+            this.checkPassword.AutoSize = true;
+            this.checkPassword.Location = new System.Drawing.Point(79, 97);
+            this.checkPassword.Name = "checkPassword";
+            this.checkPassword.Size = new System.Drawing.Size(102, 17);
+            this.checkPassword.TabIndex = 6;
+            this.checkPassword.Text = "Show Password";
+            this.checkPassword.UseVisualStyleBackColor = true;
+            this.checkPassword.CheckedChanged += new System.EventHandler(this.checkPassword_CheckedChanged);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -165,6 +178,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Dashboard";
             this.Text = "Dashboard";
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.loginPanel.ResumeLayout(false);
             this.loginPanel.PerformLayout();
@@ -185,6 +199,7 @@
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label lblRegister;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.CheckBox checkPassword;
     }
 }
 

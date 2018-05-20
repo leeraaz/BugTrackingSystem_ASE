@@ -85,5 +85,10 @@ namespace BugTrackingSystem
                 txtProjectName.Clear();
             }
         }
+
+        private void AddPoject_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
