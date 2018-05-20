@@ -89,10 +89,11 @@
             // RegisterLink
             // 
             this.RegisterLink.AutoSize = true;
+            this.RegisterLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RegisterLink.LinkColor = System.Drawing.Color.Blue;
             this.RegisterLink.Location = new System.Drawing.Point(165, 170);
             this.RegisterLink.Name = "RegisterLink";
-            this.RegisterLink.Size = new System.Drawing.Size(72, 13);
+            this.RegisterLink.Size = new System.Drawing.Size(105, 16);
             this.RegisterLink.TabIndex = 4;
             this.RegisterLink.TabStop = true;
             this.RegisterLink.Text = "Register Here";
@@ -100,9 +101,10 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(162, 112);
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Location = new System.Drawing.Point(157, 121);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(75, 30);
             this.btnCancel.TabIndex = 3;
             this.btnCancel.Text = "Reset";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -111,9 +113,10 @@
             // btnLogin
             // 
             this.btnLogin.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnLogin.Location = new System.Drawing.Point(64, 112);
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Location = new System.Drawing.Point(66, 121);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 23);
+            this.btnLogin.Size = new System.Drawing.Size(75, 30);
             this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -121,17 +124,20 @@
             // 
             // txtPassword
             // 
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(43, 65);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(217, 20);
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(217, 26);
             this.txtPassword.TabIndex = 1;
             this.txtPassword.Text = "Password";
             // 
             // txtUsername
             // 
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.Location = new System.Drawing.Point(43, 24);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(217, 20);
+            this.txtUsername.Size = new System.Drawing.Size(217, 26);
             this.txtUsername.TabIndex = 0;
             this.txtUsername.Text = "Username";
             // 

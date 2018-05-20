@@ -13,6 +13,7 @@ namespace BugTrackingSystem
 {
     public partial class BugFix : Form
     {
+        public static string usname;
         DatabaseConnection db = new DatabaseConnection();
 
         public BugFix()
@@ -39,13 +40,6 @@ namespace BugTrackingSystem
             {
                 MessageBox.Show("ex.Message");
             }
-        }
- 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            DeveloperPanel dp = new DeveloperPanel();
-            dp.Show();
-            this.Close();
         }
 
         private void cmbProject_SelectedIndexChanged(object sender, EventArgs e)
@@ -151,7 +145,7 @@ namespace BugTrackingSystem
             else if(cmbStatus.Text == "Completed")
             {
                 string insertFix = "insert into fixed_bug (Report_ID,Project_Name,Class_File,Method,Code,Report_By,Fix_By,Fix_Date,Description)" +
-                                    "values('" + reportID + "','" + projectName + "','" + clases + "','" + methods + "','" + line + "','" + code + "','" + reportby + "','" + fixedby + "','" + fixdate + "','" + desc + "')";
+                                    "values('" + reportID + "','" + projectName + "','" + clases + "','" + methods + "','" + code + "','" + reportby + "','" + fixedby + "','" + fixdate + "','" + desc + "')";
 
                 db.DBConnect = db.DBConnection();
                 MySqlCommand fixcmd = new MySqlCommand(insertFix, db.DBConnect);
@@ -177,6 +171,50 @@ namespace BugTrackingSystem
             {
                 MessageBox.Show("The status of this project is not completed.","Message",MessageBoxButtons.OK,MessageBoxIcon.Hand);
             }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            string selectUser = "select * from staff where Username = '" + Dashboard.usname + "'";
+            db.DBConnect = db.DBConnection();
+            MySqlCommand usercmd = new MySqlCommand(selectUser, db.DBConnect);
+            MySqlDataReader reader = usercmd.ExecuteReader();
+            while (reader.Read())
+                {
+                    string users = reader.GetString("User_Type");
+                    if (users == "Admin")
+                    {
+                        //MessageBox.Show("User inserted.");
+                        usname = lblFixer.Text;
+                        AdminPanel ap = new AdminPanel();
+                        ap.Show();
+                        this.Hide();
+                    }
+                    else if (users == "Programmer")
+                    {
+                        //MessageBox.Show("You are a Programmer");
+                        usname = lblFixer.Text;
+                        ProgrammerPanel ap = new ProgrammerPanel();
+                        ap.Show();
+                        this.Hide();
+                    }
+                    else if (users == "Developer")
+                    {
+                        //MessageBox.Show("You are a Developer ");
+                        usname = lblFixer.Text;
+                        DeveloperPanel ap = new DeveloperPanel();
+                        ap.Show();
+                        this.Hide();
+                    }
+                    else if (users == "Tester")
+                    {
+                        //MessageBox.Show("You are a Tester");
+                        usname = lblFixer.Text;
+                        TesterPanel ap = new TesterPanel();
+                        ap.Show();
+                        this.Hide();
+                    }
+                }
         }
     }
 }

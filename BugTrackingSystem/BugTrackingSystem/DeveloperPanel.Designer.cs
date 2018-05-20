@@ -37,14 +37,16 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnViewDetails = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnSolveBug = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.deveGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // btnReportD
             // 
+            this.btnReportD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportD.Location = new System.Drawing.Point(12, 58);
             this.btnReportD.Name = "btnReportD";
-            this.btnReportD.Size = new System.Drawing.Size(106, 47);
+            this.btnReportD.Size = new System.Drawing.Size(151, 35);
             this.btnReportD.TabIndex = 0;
             this.btnReportD.Text = "Report Bug";
             this.btnReportD.UseVisualStyleBackColor = true;
@@ -52,9 +54,10 @@
             // 
             // btnViewD
             // 
+            this.btnViewD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewD.Location = new System.Drawing.Point(12, 146);
             this.btnViewD.Name = "btnViewD";
-            this.btnViewD.Size = new System.Drawing.Size(106, 44);
+            this.btnViewD.Size = new System.Drawing.Size(151, 32);
             this.btnViewD.TabIndex = 1;
             this.btnViewD.Text = "View Reported Bug";
             this.btnViewD.UseVisualStyleBackColor = true;
@@ -62,9 +65,10 @@
             // 
             // btnLogoutD
             // 
+            this.btnLogoutD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogoutD.Location = new System.Drawing.Point(12, 445);
             this.btnLogoutD.Name = "btnLogoutD";
-            this.btnLogoutD.Size = new System.Drawing.Size(106, 44);
+            this.btnLogoutD.Size = new System.Drawing.Size(151, 32);
             this.btnLogoutD.TabIndex = 2;
             this.btnLogoutD.Text = "Logout";
             this.btnLogoutD.UseVisualStyleBackColor = true;
@@ -73,33 +77,36 @@
             // deveGrid
             // 
             this.deveGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.deveGrid.Location = new System.Drawing.Point(124, 58);
+            this.deveGrid.Location = new System.Drawing.Point(189, 58);
             this.deveGrid.Name = "deveGrid";
-            this.deveGrid.Size = new System.Drawing.Size(722, 431);
+            this.deveGrid.Size = new System.Drawing.Size(657, 431);
             this.deveGrid.TabIndex = 3;
             // 
             // lblUname
             // 
             this.lblUname.AutoSize = true;
-            this.lblUname.Location = new System.Drawing.Point(71, 12);
+            this.lblUname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUname.Location = new System.Drawing.Point(118, 15);
             this.lblUname.Name = "lblUname";
-            this.lblUname.Size = new System.Drawing.Size(0, 13);
+            this.lblUname.Size = new System.Drawing.Size(0, 20);
             this.lblUname.TabIndex = 14;
             // 
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Location = new System.Drawing.Point(19, 12);
+            this.lblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcome.Location = new System.Drawing.Point(23, 15);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(52, 13);
+            this.lblWelcome.Size = new System.Drawing.Size(82, 20);
             this.lblWelcome.TabIndex = 13;
             this.lblWelcome.Text = "Welcome";
             // 
             // btnUpdate
             // 
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.Location = new System.Drawing.Point(12, 353);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(106, 44);
+            this.btnUpdate.Size = new System.Drawing.Size(151, 32);
             this.btnUpdate.TabIndex = 15;
             this.btnUpdate.Text = "Update Details";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -107,9 +114,10 @@
             // 
             // btnViewDetails
             // 
-            this.btnViewDetails.Location = new System.Drawing.Point(12, 252);
+            this.btnViewDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewDetails.Location = new System.Drawing.Point(12, 281);
             this.btnViewDetails.Name = "btnViewDetails";
-            this.btnViewDetails.Size = new System.Drawing.Size(106, 44);
+            this.btnViewDetails.Size = new System.Drawing.Size(151, 32);
             this.btnViewDetails.TabIndex = 16;
             this.btnViewDetails.Text = "View Details";
             this.btnViewDetails.UseVisualStyleBackColor = true;
@@ -117,16 +125,28 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(632, 12);
+            this.dateTimePicker1.Location = new System.Drawing.Point(631, 15);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 17;
+            // 
+            // btnSolveBug
+            // 
+            this.btnSolveBug.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSolveBug.Location = new System.Drawing.Point(12, 217);
+            this.btnSolveBug.Name = "btnSolveBug";
+            this.btnSolveBug.Size = new System.Drawing.Size(151, 32);
+            this.btnSolveBug.TabIndex = 18;
+            this.btnSolveBug.Text = "View Solved Bug";
+            this.btnSolveBug.UseVisualStyleBackColor = true;
+            this.btnSolveBug.Click += new System.EventHandler(this.btnSolveBug_Click);
             // 
             // DeveloperPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(858, 501);
+            this.Controls.Add(this.btnSolveBug);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.btnViewDetails);
             this.Controls.Add(this.btnUpdate);
@@ -156,5 +176,6 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnViewDetails;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btnSolveBug;
     }
 }

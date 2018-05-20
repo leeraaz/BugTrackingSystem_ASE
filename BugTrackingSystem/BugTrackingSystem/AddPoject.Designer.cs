@@ -46,84 +46,94 @@
             // lblProjectType
             // 
             this.lblProjectType.AutoSize = true;
+            this.lblProjectType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProjectType.Location = new System.Drawing.Point(23, 166);
             this.lblProjectType.Name = "lblProjectType";
-            this.lblProjectType.Size = new System.Drawing.Size(67, 13);
+            this.lblProjectType.Size = new System.Drawing.Size(108, 20);
             this.lblProjectType.TabIndex = 0;
             this.lblProjectType.Text = "Project Type";
             // 
             // lblEnd
             // 
             this.lblEnd.AutoSize = true;
+            this.lblEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEnd.Location = new System.Drawing.Point(22, 130);
             this.lblEnd.Name = "lblEnd";
-            this.lblEnd.Size = new System.Drawing.Size(101, 13);
+            this.lblEnd.Size = new System.Drawing.Size(171, 20);
             this.lblEnd.TabIndex = 1;
             this.lblEnd.Text = "Estimated End Date";
             // 
             // lblProject
             // 
             this.lblProject.AutoSize = true;
+            this.lblProject.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProject.Location = new System.Drawing.Point(22, 61);
             this.lblProject.Name = "lblProject";
-            this.lblProject.Size = new System.Drawing.Size(71, 13);
+            this.lblProject.Size = new System.Drawing.Size(116, 20);
             this.lblProject.TabIndex = 2;
             this.lblProject.Text = "Project Name";
             // 
             // lblStart
             // 
             this.lblStart.AutoSize = true;
+            this.lblStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStart.Location = new System.Drawing.Point(22, 95);
             this.lblStart.Name = "lblStart";
-            this.lblStart.Size = new System.Drawing.Size(55, 13);
+            this.lblStart.Size = new System.Drawing.Size(93, 20);
             this.lblStart.TabIndex = 3;
             this.lblStart.Text = "Start Date";
             // 
             // lblNewProject
             // 
             this.lblNewProject.AutoSize = true;
-            this.lblNewProject.Location = new System.Drawing.Point(130, 24);
+            this.lblNewProject.Font = new System.Drawing.Font("Monotype Corsiva", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNewProject.Location = new System.Drawing.Point(87, 9);
             this.lblNewProject.Name = "lblNewProject";
-            this.lblNewProject.Size = new System.Drawing.Size(65, 13);
+            this.lblNewProject.Size = new System.Drawing.Size(169, 39);
             this.lblNewProject.TabIndex = 4;
             this.lblNewProject.Text = "New Project";
             // 
             // txtProjectName
             // 
+            this.txtProjectName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProjectName.Location = new System.Drawing.Point(148, 61);
             this.txtProjectName.Name = "txtProjectName";
-            this.txtProjectName.Size = new System.Drawing.Size(200, 20);
+            this.txtProjectName.Size = new System.Drawing.Size(200, 26);
             this.txtProjectName.TabIndex = 5;
             // 
             // startDate
             // 
             this.startDate.CustomFormat = "yyyy-MM-dd";
+            this.startDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.startDate.Location = new System.Drawing.Point(148, 88);
             this.startDate.Name = "startDate";
-            this.startDate.Size = new System.Drawing.Size(200, 20);
+            this.startDate.Size = new System.Drawing.Size(200, 26);
             this.startDate.TabIndex = 7;
             // 
             // estiDate
             // 
             this.estiDate.CustomFormat = "yyyy-MM-dd";
+            this.estiDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.estiDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.estiDate.Location = new System.Drawing.Point(148, 128);
             this.estiDate.Name = "estiDate";
-            this.estiDate.Size = new System.Drawing.Size(200, 20);
+            this.estiDate.Size = new System.Drawing.Size(200, 26);
             this.estiDate.TabIndex = 8;
             // 
             // lblAssignUser
             // 
             this.lblAssignUser.AutoSize = true;
+            this.lblAssignUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAssignUser.Location = new System.Drawing.Point(23, 197);
             this.lblAssignUser.Name = "lblAssignUser";
-            this.lblAssignUser.Size = new System.Drawing.Size(54, 13);
+            this.lblAssignUser.Size = new System.Drawing.Size(88, 20);
             this.lblAssignUser.TabIndex = 9;
             this.lblAssignUser.Text = "Assign To";
             // 
             // cmbProjectType
             // 
+            this.cmbProjectType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbProjectType.FormattingEnabled = true;
             this.cmbProjectType.Items.AddRange(new object[] {
             "Database",
@@ -133,14 +143,15 @@
             "HTML"});
             this.cmbProjectType.Location = new System.Drawing.Point(148, 163);
             this.cmbProjectType.Name = "cmbProjectType";
-            this.cmbProjectType.Size = new System.Drawing.Size(200, 21);
+            this.cmbProjectType.Size = new System.Drawing.Size(200, 28);
             this.cmbProjectType.TabIndex = 10;
             // 
             // btnSaveN
             // 
+            this.btnSaveN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSaveN.Location = new System.Drawing.Point(94, 247);
             this.btnSaveN.Name = "btnSaveN";
-            this.btnSaveN.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveN.Size = new System.Drawing.Size(87, 38);
             this.btnSaveN.TabIndex = 11;
             this.btnSaveN.Text = "Save";
             this.btnSaveN.UseVisualStyleBackColor = true;
@@ -148,9 +159,10 @@
             // 
             // btnCancelN
             // 
+            this.btnCancelN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelN.Location = new System.Drawing.Point(201, 247);
             this.btnCancelN.Name = "btnCancelN";
-            this.btnCancelN.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelN.Size = new System.Drawing.Size(87, 38);
             this.btnCancelN.TabIndex = 12;
             this.btnCancelN.Text = "Cancel";
             this.btnCancelN.UseVisualStyleBackColor = true;
@@ -158,10 +170,11 @@
             // 
             // cmbUser
             // 
+            this.cmbUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbUser.FormattingEnabled = true;
             this.cmbUser.Location = new System.Drawing.Point(148, 197);
             this.cmbUser.Name = "cmbUser";
-            this.cmbUser.Size = new System.Drawing.Size(200, 21);
+            this.cmbUser.Size = new System.Drawing.Size(200, 28);
             this.cmbUser.TabIndex = 13;
             // 
             // AddPoject

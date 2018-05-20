@@ -11,15 +11,15 @@ using MySql.Data.MySqlClient;
 
 namespace BugTrackingSystem
 {
-    public partial class UpdateStaff : Form
+    public partial class UpdateProgrammer : Form
     {
         DatabaseConnection db = new DatabaseConnection();
-        public UpdateStaff()
+        public UpdateProgrammer()
         {
             InitializeComponent();
         }
 
-        private void UpdateStaff_Load(object sender, EventArgs e)
+        private void UpdateProgrammer_Load(object sender, EventArgs e)
         {
             txtSid.Text = ProgrammerPanel.staffID;
             txtFirstName.Text = ProgrammerPanel.fname;
@@ -34,11 +34,23 @@ namespace BugTrackingSystem
             txtPasswordR.Text = ProgrammerPanel.pass;
         }
 
-        private void Back_Click(object sender, EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
-            DeveloperPanel dep = new DeveloperPanel();
-            dep.Show();
+            ProgrammerPanel pp = new ProgrammerPanel();
+            pp.Show();
             this.Close();
+        }
+
+        private void checkShow_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkShow.Checked)
+            {
+                txtPasswordR.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                txtPasswordR.UseSystemPasswordChar = false;
+            }
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -55,9 +67,19 @@ namespace BugTrackingSystem
             string usern = txtUsernameR.Text;
             string passd = txtPasswordR.Text;
 
-            string update = "update staff set First_Name = '" + fname + "',Last_Name = '" + lname + "',Address = '" + add + "',Gender = '" + gender + "'Contact_No = '" + contact + "',Email = '" + email + "',User_Type = '" + usertype + "'Username = '" + usern + "',Password = '" + passd + "' where Staff_ID = '" + sid + "';";
+            string updateOProg = "update staff set First_Name = '" + fname + 
+                                                 "',Last_Name = '" + lname + 
+                                                 "',Address = '" + add + 
+                                                 "',Gender = '" + gender + 
+                                                 "',Date_of_Birth = '" + dob + 
+                                                 "',Contact_No = '" + contact + 
+                                                 "',Email = '" + email + 
+                                                 "',User_Type = '" + usertype + 
+                                                 "',Username = '" + usern + 
+                                                 "',Password = '" + passd + 
+                                                 "' where Staff_ID = '" + sid + "';";
             db.DBConnect = db.DBConnection();
-            MySqlCommand updatecommand = new MySqlCommand(update, db.DBConnect);
+            MySqlCommand updatecommand = new MySqlCommand(updateOProg, db.DBConnect);
             try
             {
                 int count = updatecommand.ExecuteNonQuery();

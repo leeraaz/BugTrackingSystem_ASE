@@ -48,6 +48,13 @@ namespace BugTrackingSystem
            
         }
 
+        private void btnSolveBug_Click(object sender, EventArgs e)
+        {
+            ViewFixBug vfb = new ViewFixBug();
+            vfb.Show();
+            this.Close();
+        }
+
         public void staffDetails()
         {
             db.DBConnect = db.DBConnection();
@@ -105,9 +112,7 @@ namespace BugTrackingSystem
                 contact = deveGrid.SelectedRows[0].Cells[6].Value + string.Empty;
                 email = deveGrid.SelectedRows[0].Cells[7].Value + string.Empty;
                 count = deveGrid.SelectedRows.Count;
-
-                //id = adminDataGrid.SelectedRows[0].Cells[0].Value + string.Empty;
-                //pname = adminDataGrid.SelectedRows[0].Cells[2].Value + string.Empty;
+                
                 UpdateStaff update = new UpdateStaff();
                 update.Show();
                 this.Close();

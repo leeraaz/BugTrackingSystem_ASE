@@ -52,13 +52,14 @@
             this.txtGender = new System.Windows.Forms.TextBox();
             this.txtStaffID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblDOB
             // 
             this.lblDOB.AutoSize = true;
             this.lblDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDOB.Location = new System.Drawing.Point(77, 217);
+            this.lblDOB.Location = new System.Drawing.Point(76, 217);
             this.lblDOB.Name = "lblDOB";
             this.lblDOB.Size = new System.Drawing.Size(57, 20);
             this.lblDOB.TabIndex = 54;
@@ -68,7 +69,7 @@
             // 
             this.lblUsertype.AutoSize = true;
             this.lblUsertype.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsertype.Location = new System.Drawing.Point(75, 327);
+            this.lblUsertype.Location = new System.Drawing.Point(74, 327);
             this.lblUsertype.Name = "lblUsertype";
             this.lblUsertype.Size = new System.Drawing.Size(90, 20);
             this.lblUsertype.TabIndex = 51;
@@ -77,7 +78,7 @@
             // bnBack
             // 
             this.bnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bnBack.Location = new System.Drawing.Point(253, 436);
+            this.bnBack.Location = new System.Drawing.Point(252, 436);
             this.bnBack.Name = "bnBack";
             this.bnBack.Size = new System.Drawing.Size(77, 34);
             this.bnBack.TabIndex = 50;
@@ -88,7 +89,7 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(122, 436);
+            this.btnDelete.Location = new System.Drawing.Point(121, 436);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(79, 34);
             this.btnDelete.TabIndex = 49;
@@ -158,7 +159,7 @@
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(75, 395);
+            this.lblPassword.Location = new System.Drawing.Point(74, 395);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(86, 20);
             this.lblPassword.TabIndex = 36;
@@ -168,7 +169,7 @@
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(75, 361);
+            this.lblUsername.Location = new System.Drawing.Point(74, 361);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(91, 20);
             this.lblUsername.TabIndex = 35;
@@ -178,7 +179,7 @@
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(75, 291);
+            this.lblEmail.Location = new System.Drawing.Point(74, 291);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(59, 20);
             this.lblEmail.TabIndex = 34;
@@ -188,7 +189,7 @@
             // 
             this.lblContact.AutoSize = true;
             this.lblContact.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContact.Location = new System.Drawing.Point(77, 259);
+            this.lblContact.Location = new System.Drawing.Point(76, 259);
             this.lblContact.Name = "lblContact";
             this.lblContact.Size = new System.Drawing.Size(104, 20);
             this.lblContact.TabIndex = 33;
@@ -198,7 +199,7 @@
             // 
             this.lblGender.AutoSize = true;
             this.lblGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGender.Location = new System.Drawing.Point(75, 177);
+            this.lblGender.Location = new System.Drawing.Point(74, 177);
             this.lblGender.Name = "lblGender";
             this.lblGender.Size = new System.Drawing.Size(69, 20);
             this.lblGender.TabIndex = 32;
@@ -208,7 +209,7 @@
             // 
             this.lblAddress.AutoSize = true;
             this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.Location = new System.Drawing.Point(75, 147);
+            this.lblAddress.Location = new System.Drawing.Point(74, 147);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(66, 20);
             this.lblAddress.TabIndex = 31;
@@ -218,7 +219,7 @@
             // 
             this.lblLastName.AutoSize = true;
             this.lblLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLastName.Location = new System.Drawing.Point(75, 118);
+            this.lblLastName.Location = new System.Drawing.Point(74, 118);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(95, 20);
             this.lblLastName.TabIndex = 30;
@@ -228,7 +229,7 @@
             // 
             this.lblFisrtName.AutoSize = true;
             this.lblFisrtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFisrtName.Location = new System.Drawing.Point(75, 85);
+            this.lblFisrtName.Location = new System.Drawing.Point(74, 85);
             this.lblFisrtName.Name = "lblFisrtName";
             this.lblFisrtName.Size = new System.Drawing.Size(96, 20);
             this.lblFisrtName.TabIndex = 29;
@@ -270,17 +271,28 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(75, 53);
+            this.label1.Location = new System.Drawing.Point(74, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 20);
             this.label1.TabIndex = 58;
             this.label1.Text = "Staff ID";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(138, -2);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(167, 39);
+            this.label2.TabIndex = 60;
+            this.label2.Text = "Delete Staff";
             // 
             // DeleteStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 549);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtStaffID);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtGender);
@@ -337,5 +349,6 @@
         private System.Windows.Forms.TextBox txtGender;
         private System.Windows.Forms.TextBox txtStaffID;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

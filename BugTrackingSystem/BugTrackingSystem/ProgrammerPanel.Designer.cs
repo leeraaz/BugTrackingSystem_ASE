@@ -28,31 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.proGrid = new System.Windows.Forms.DataGridView();
             this.btnLogoutD = new System.Windows.Forms.Button();
             this.btnViewD = new System.Windows.Forms.Button();
             this.btnReportD = new System.Windows.Forms.Button();
-            this.txtSearchT = new System.Windows.Forms.TextBox();
-            this.lblSearchP = new System.Windows.Forms.Label();
-            this.btnGoP = new System.Windows.Forms.Button();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.lblUname = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnProfile = new System.Windows.Forms.Button();
+            this.btnUpdate021 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.proGrid)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // proGrid
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(172, 46);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(674, 431);
-            this.dataGridView1.TabIndex = 7;
+            this.proGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.proGrid.Location = new System.Drawing.Point(140, 57);
+            this.proGrid.Name = "proGrid";
+            this.proGrid.Size = new System.Drawing.Size(718, 449);
+            this.proGrid.TabIndex = 7;
             // 
             // btnLogoutD
             // 
-            this.btnLogoutD.Location = new System.Drawing.Point(12, 191);
+            this.btnLogoutD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogoutD.Location = new System.Drawing.Point(12, 462);
             this.btnLogoutD.Name = "btnLogoutD";
-            this.btnLogoutD.Size = new System.Drawing.Size(106, 44);
+            this.btnLogoutD.Size = new System.Drawing.Size(122, 32);
             this.btnLogoutD.TabIndex = 6;
             this.btnLogoutD.Text = "Logout";
             this.btnLogoutD.UseVisualStyleBackColor = true;
@@ -60,83 +61,92 @@
             // 
             // btnViewD
             // 
-            this.btnViewD.Location = new System.Drawing.Point(12, 117);
+            this.btnViewD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewD.Location = new System.Drawing.Point(12, 152);
             this.btnViewD.Name = "btnViewD";
-            this.btnViewD.Size = new System.Drawing.Size(106, 44);
+            this.btnViewD.Size = new System.Drawing.Size(122, 32);
             this.btnViewD.TabIndex = 5;
             this.btnViewD.Text = "View Reported Bug";
             this.btnViewD.UseVisualStyleBackColor = true;
+            this.btnViewD.Click += new System.EventHandler(this.btnViewD_Click);
             // 
             // btnReportD
             // 
-            this.btnReportD.Location = new System.Drawing.Point(12, 46);
+            this.btnReportD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportD.Location = new System.Drawing.Point(12, 57);
             this.btnReportD.Name = "btnReportD";
-            this.btnReportD.Size = new System.Drawing.Size(106, 47);
+            this.btnReportD.Size = new System.Drawing.Size(122, 35);
             this.btnReportD.TabIndex = 4;
             this.btnReportD.Text = "Report Bug";
             this.btnReportD.UseVisualStyleBackColor = true;
             this.btnReportD.Click += new System.EventHandler(this.btnReportD_Click);
             // 
-            // txtSearchT
-            // 
-            this.txtSearchT.Location = new System.Drawing.Point(654, 20);
-            this.txtSearchT.Name = "txtSearchT";
-            this.txtSearchT.Size = new System.Drawing.Size(136, 20);
-            this.txtSearchT.TabIndex = 10;
-            // 
-            // lblSearchP
-            // 
-            this.lblSearchP.AutoSize = true;
-            this.lblSearchP.Location = new System.Drawing.Point(598, 22);
-            this.lblSearchP.Name = "lblSearchP";
-            this.lblSearchP.Size = new System.Drawing.Size(41, 13);
-            this.lblSearchP.TabIndex = 9;
-            this.lblSearchP.Text = "Search";
-            // 
-            // btnGoP
-            // 
-            this.btnGoP.Location = new System.Drawing.Point(805, 17);
-            this.btnGoP.Name = "btnGoP";
-            this.btnGoP.Size = new System.Drawing.Size(43, 23);
-            this.btnGoP.TabIndex = 8;
-            this.btnGoP.Text = "GO";
-            this.btnGoP.UseVisualStyleBackColor = true;
-            // 
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Location = new System.Drawing.Point(13, 13);
+            this.lblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcome.Location = new System.Drawing.Point(12, 19);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(52, 13);
+            this.lblWelcome.Size = new System.Drawing.Size(82, 20);
             this.lblWelcome.TabIndex = 11;
             this.lblWelcome.Text = "Welcome";
             // 
             // lblUname
             // 
             this.lblUname.AutoSize = true;
-            this.lblUname.Location = new System.Drawing.Point(72, 13);
+            this.lblUname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUname.Location = new System.Drawing.Point(118, 19);
             this.lblUname.Name = "lblUname";
-            this.lblUname.Size = new System.Drawing.Size(0, 13);
+            this.lblUname.Size = new System.Drawing.Size(0, 20);
             this.lblUname.TabIndex = 12;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(649, 13);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 13;
+            // 
+            // btnProfile
+            // 
+            this.btnProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfile.Location = new System.Drawing.Point(12, 258);
+            this.btnProfile.Name = "btnProfile";
+            this.btnProfile.Size = new System.Drawing.Size(122, 32);
+            this.btnProfile.TabIndex = 14;
+            this.btnProfile.Text = "View Profile";
+            this.btnProfile.UseVisualStyleBackColor = true;
+            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
+            // 
+            // btnUpdate021
+            // 
+            this.btnUpdate021.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate021.Location = new System.Drawing.Point(12, 360);
+            this.btnUpdate021.Name = "btnUpdate021";
+            this.btnUpdate021.Size = new System.Drawing.Size(122, 32);
+            this.btnUpdate021.TabIndex = 15;
+            this.btnUpdate021.Text = "Update Profile";
+            this.btnUpdate021.UseVisualStyleBackColor = true;
+            this.btnUpdate021.Click += new System.EventHandler(this.btnUpdate021_Click);
             // 
             // ProgrammerPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(870, 526);
+            this.ClientSize = new System.Drawing.Size(861, 511);
+            this.Controls.Add(this.btnUpdate021);
+            this.Controls.Add(this.btnProfile);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.lblUname);
             this.Controls.Add(this.lblWelcome);
-            this.Controls.Add(this.txtSearchT);
-            this.Controls.Add(this.lblSearchP);
-            this.Controls.Add(this.btnGoP);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.proGrid);
             this.Controls.Add(this.btnLogoutD);
             this.Controls.Add(this.btnViewD);
             this.Controls.Add(this.btnReportD);
             this.Name = "ProgrammerPanel";
             this.Text = "ProgrammerPanel";
             this.Load += new System.EventHandler(this.ProgrammerPanel_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -144,14 +154,14 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView proGrid;
         private System.Windows.Forms.Button btnLogoutD;
         private System.Windows.Forms.Button btnViewD;
         private System.Windows.Forms.Button btnReportD;
-        private System.Windows.Forms.TextBox txtSearchT;
-        private System.Windows.Forms.Label lblSearchP;
-        private System.Windows.Forms.Button btnGoP;
         private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.Label lblUname;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btnProfile;
+        private System.Windows.Forms.Button btnUpdate021;
     }
 }

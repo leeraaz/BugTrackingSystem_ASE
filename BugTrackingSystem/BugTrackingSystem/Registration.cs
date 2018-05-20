@@ -117,6 +117,19 @@ namespace BugTrackingSystem
                 txtRePassword.Clear();
                 txtPasswordR.Focus();
             }
+            else if(cmbUserType.Text == "Admin")
+            {
+                string checkusertype = cmbUserType.Text;
+                string sqlcmd = "select User_Type from staff where User_Type = '" + checkusertype + "'";
+
+                db.DBConnect = db.DBConnection();
+                MySqlCommand ret = new MySqlCommand(sqlcmd, db.DBConnect);
+                MySqlDataReader reader = ret.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    MessageBox.Show(checkusertype + " cannot be used because Admin has been already identified.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
             else
             {
                 string checkuser = txtUsernameR.Text;

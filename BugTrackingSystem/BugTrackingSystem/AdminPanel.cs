@@ -15,6 +15,40 @@ namespace BugTrackingSystem
     public partial class AdminPanel : Form
     {
         public static string staffid, fname, lname, add, gender, dob, contact, email, usertype, user, pass;
+        public static string projectid, proName, sDate, eDate, pType, assTO;
+
+        private void btnDeleteProject_Click(object sender, EventArgs e)
+        {
+            if (adminDataGrid.SelectedRows.Count > 0)
+            {
+                projectid = adminDataGrid.SelectedRows[0].Cells[0].Value + string.Empty;
+                proName = adminDataGrid.SelectedRows[0].Cells[1].Value + string.Empty;
+                sDate = adminDataGrid.SelectedRows[0].Cells[2].Value + string.Empty;
+                eDate = adminDataGrid.SelectedRows[0].Cells[3].Value + string.Empty;
+                pType = adminDataGrid.SelectedRows[0].Cells[4].Value + string.Empty;
+                assTO = adminDataGrid.SelectedRows[0].Cells[5].Value + string.Empty;
+
+                DeleteProject delete = new DeleteProject();
+                delete.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("You need a select a row", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnViewProject_Click(object sender, EventArgs e)
+        {
+            ProjectDetails();
+        }
+
+        private void btnSolvedA_Click(object sender, EventArgs e)
+        {
+            ViewFixBug vfb = new ViewFixBug();
+            vfb.Show();
+            this.Close();
+        }
 
         DatabaseConnection db = new DatabaseConnection();
         public AdminPanel()
@@ -38,6 +72,18 @@ namespace BugTrackingSystem
             DataSet ds = new DataSet();
             adpt.Fill(ds, "staff");
             adminDataGrid.DataSource = ds.Tables["staff"];
+            db.DBConnect.Close();
+        }
+
+        public void ProjectDetails()
+        {
+            db.DBConnect = db.DBConnection();
+            //DataTable table = new DataTable();
+            MySqlDataAdapter adpt = new MySqlDataAdapter("select * from project", db.DBConnect);
+
+            DataSet ds = new DataSet();
+            adpt.Fill(ds, "project");
+            adminDataGrid.DataSource = ds.Tables["project"];
             db.DBConnect.Close();
         }
 

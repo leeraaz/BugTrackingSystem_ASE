@@ -71,6 +71,12 @@
       <DependentUpon>BugFix.cs</DependentUpon>
     </Compile>
     <Compile Include="DatabaseConnection.cs" />
+    <Compile Include="DeleteProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteProject.Designer.cs">
+      <DependentUpon>DeleteProject.cs</DependentUpon>
+    </Compile>
     <Compile Include="DeleteStaff.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,11 +122,29 @@
     <Compile Include="TesterPanel.Designer.cs">
       <DependentUpon>TesterPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateProgrammer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateProgrammer.Designer.cs">
+      <DependentUpon>UpdateProgrammer.cs</DependentUpon>
+    </Compile>
     <Compile Include="UpdateStaff.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UpdateStaff.Designer.cs">
       <DependentUpon>UpdateStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateTester.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateTester.Designer.cs">
+      <DependentUpon>UpdateTester.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFixBug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewFixBug.Designer.cs">
+      <DependentUpon>ViewFixBug.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AddPoject.resx">
       <DependentUpon>AddPoject.cs</DependentUpon>
@@ -130,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BugFix.resx">
       <DependentUpon>BugFix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteProject.resx">
+      <DependentUpon>DeleteProject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteStaff.resx">
       <DependentUpon>DeleteStaff.cs</DependentUpon>
@@ -162,8 +189,17 @@
     <EmbeddedResource Include="TesterPanel.resx">
       <DependentUpon>TesterPanel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UpdateProgrammer.resx">
+      <DependentUpon>UpdateProgrammer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UpdateStaff.resx">
       <DependentUpon>UpdateStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateTester.resx">
+      <DependentUpon>UpdateTester.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewFixBug.resx">
+      <DependentUpon>ViewFixBug.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

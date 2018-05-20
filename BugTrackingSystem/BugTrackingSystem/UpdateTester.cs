@@ -11,33 +11,31 @@ using MySql.Data.MySqlClient;
 
 namespace BugTrackingSystem
 {
-    public partial class UpdateStaff : Form
+    public partial class UpdateTester : Form
     {
         DatabaseConnection db = new DatabaseConnection();
-        public UpdateStaff()
+        public UpdateTester()
         {
             InitializeComponent();
         }
-
-        private void UpdateStaff_Load(object sender, EventArgs e)
+        private void UpdateTester_Load(object sender, EventArgs e)
         {
-            txtSid.Text = ProgrammerPanel.staffID;
-            txtFirstName.Text = ProgrammerPanel.fname;
-            txtLastName.Text = ProgrammerPanel.lname;
-            txtAdd.Text = ProgrammerPanel.add;
-            txtGender.Text = ProgrammerPanel.gender;
-            txtDate.Text = ProgrammerPanel.dob;
-            txtContact.Text = ProgrammerPanel.contact;
-            txtEmail.Text = ProgrammerPanel.email;
-            txtUsertype.Text = ProgrammerPanel.usertype;
-            txtUsernameR.Text = ProgrammerPanel.user;
-            txtPasswordR.Text = ProgrammerPanel.pass;
+            txtSid.Text = TesterPanel.staffID;
+            txtFirstName.Text = TesterPanel.fname;
+            txtLastName.Text = TesterPanel.lname;
+            txtAdd.Text = TesterPanel.add;
+            txtGender.Text = TesterPanel.gender;
+            txtDate.Text = TesterPanel.dob;
+            txtContact.Text = TesterPanel.contact;
+            txtEmail.Text = TesterPanel.email;
+            txtUsertype.Text = TesterPanel.usertype;
+            txtUsernameR.Text = TesterPanel.user;
+            txtPasswordR.Text = TesterPanel.pass;
         }
-
-        private void Back_Click(object sender, EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
-            DeveloperPanel dep = new DeveloperPanel();
-            dep.Show();
+            TesterPanel tp = new TesterPanel();
+            tp.Show();
             this.Close();
         }
 
@@ -73,6 +71,18 @@ namespace BugTrackingSystem
             catch (Exception exp)
             {
                 MessageBox.Show(exp.Message);
+            }
+        }
+
+        private void checkShow_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkShow.Checked)
+            {
+                txtPasswordR.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                txtPasswordR.UseSystemPasswordChar = false;
             }
         }
     }
