@@ -30,14 +30,22 @@ namespace BugTrackingSystem
 
         public void reportDetails()
         {
-            db.DBConnect = db.DBConnection();
-            //DataTable table = new DataTable();
-            MySqlDataAdapter adpt = new MySqlDataAdapter("select * from report where Assign_To = '" + lblUname.Text + "'", db.DBConnect);
+            //db.DBConnect = db.DBConnection();
+            ////DataTable table = new DataTable();
+            //MySqlDataAdapter adpt = new MySqlDataAdapter("select  from report", db.DBConnect);
 
-            DataSet ds = new DataSet();
-            adpt.Fill(ds, "report");
-            deveGrid.DataSource = ds.Tables["report"];
-            db.DBConnect.Close();
+            //DataSet ds = new DataSet();
+            ////adpt.Fill(ds, "report");
+            ////deveGrid.DataSource = ds.Tables["report"];
+            //DataTable report = ds.Tables["report"];
+            //DataColumn column = report.Columns.Add("NotABlobAnyMore", typeof(string));
+            //foreach (DataRow row in report.Rows)
+            //{
+            //    row[column] = Encoding.Unicode.GetString((byte[])row["Code"]);
+            //}
+            //deveGrid.DataSource = report;
+            ////db.DBConnect.Close();
+           
         }
 
         public void staffDetails()
@@ -74,7 +82,10 @@ namespace BugTrackingSystem
 
         private void btnViewD_Click(object sender, EventArgs e)
         {
-            reportDetails();
+            //reportDetails();
+            BugFix bf = new BugFix();
+            bf.Show();
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)

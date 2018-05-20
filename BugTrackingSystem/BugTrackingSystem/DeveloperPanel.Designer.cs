@@ -32,19 +32,17 @@
             this.btnViewD = new System.Windows.Forms.Button();
             this.btnLogoutD = new System.Windows.Forms.Button();
             this.deveGrid = new System.Windows.Forms.DataGridView();
-            this.btnGoD = new System.Windows.Forms.Button();
-            this.lblSearchD = new System.Windows.Forms.Label();
-            this.txtSearchD = new System.Windows.Forms.TextBox();
             this.lblUname = new System.Windows.Forms.Label();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnViewDetails = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.deveGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // btnReportD
             // 
-            this.btnReportD.Location = new System.Drawing.Point(12, 101);
+            this.btnReportD.Location = new System.Drawing.Point(12, 58);
             this.btnReportD.Name = "btnReportD";
             this.btnReportD.Size = new System.Drawing.Size(106, 47);
             this.btnReportD.TabIndex = 0;
@@ -54,7 +52,7 @@
             // 
             // btnViewD
             // 
-            this.btnViewD.Location = new System.Drawing.Point(12, 172);
+            this.btnViewD.Location = new System.Drawing.Point(12, 146);
             this.btnViewD.Name = "btnViewD";
             this.btnViewD.Size = new System.Drawing.Size(106, 44);
             this.btnViewD.TabIndex = 1;
@@ -64,7 +62,7 @@
             // 
             // btnLogoutD
             // 
-            this.btnLogoutD.Location = new System.Drawing.Point(12, 339);
+            this.btnLogoutD.Location = new System.Drawing.Point(12, 445);
             this.btnLogoutD.Name = "btnLogoutD";
             this.btnLogoutD.Size = new System.Drawing.Size(106, 44);
             this.btnLogoutD.TabIndex = 2;
@@ -75,35 +73,10 @@
             // deveGrid
             // 
             this.deveGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.deveGrid.Location = new System.Drawing.Point(172, 45);
+            this.deveGrid.Location = new System.Drawing.Point(124, 58);
             this.deveGrid.Name = "deveGrid";
-            this.deveGrid.Size = new System.Drawing.Size(674, 431);
+            this.deveGrid.Size = new System.Drawing.Size(722, 431);
             this.deveGrid.TabIndex = 3;
-            // 
-            // btnGoD
-            // 
-            this.btnGoD.Location = new System.Drawing.Point(803, 12);
-            this.btnGoD.Name = "btnGoD";
-            this.btnGoD.Size = new System.Drawing.Size(43, 23);
-            this.btnGoD.TabIndex = 4;
-            this.btnGoD.Text = "GO";
-            this.btnGoD.UseVisualStyleBackColor = true;
-            // 
-            // lblSearchD
-            // 
-            this.lblSearchD.AutoSize = true;
-            this.lblSearchD.Location = new System.Drawing.Point(596, 17);
-            this.lblSearchD.Name = "lblSearchD";
-            this.lblSearchD.Size = new System.Drawing.Size(41, 13);
-            this.lblSearchD.TabIndex = 5;
-            this.lblSearchD.Text = "Search";
-            // 
-            // txtSearchD
-            // 
-            this.txtSearchD.Location = new System.Drawing.Point(652, 15);
-            this.txtSearchD.Name = "txtSearchD";
-            this.txtSearchD.Size = new System.Drawing.Size(136, 20);
-            this.txtSearchD.TabIndex = 6;
             // 
             // lblUname
             // 
@@ -116,7 +89,7 @@
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Location = new System.Drawing.Point(12, 12);
+            this.lblWelcome.Location = new System.Drawing.Point(19, 12);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(52, 13);
             this.lblWelcome.TabIndex = 13;
@@ -124,7 +97,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(12, 280);
+            this.btnUpdate.Location = new System.Drawing.Point(12, 353);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(106, 44);
             this.btnUpdate.TabIndex = 15;
@@ -134,7 +107,7 @@
             // 
             // btnViewDetails
             // 
-            this.btnViewDetails.Location = new System.Drawing.Point(12, 230);
+            this.btnViewDetails.Location = new System.Drawing.Point(12, 252);
             this.btnViewDetails.Name = "btnViewDetails";
             this.btnViewDetails.Size = new System.Drawing.Size(106, 44);
             this.btnViewDetails.TabIndex = 16;
@@ -142,18 +115,23 @@
             this.btnViewDetails.UseVisualStyleBackColor = true;
             this.btnViewDetails.Click += new System.EventHandler(this.button2_Click);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(632, 12);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 17;
+            // 
             // DeveloperPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(858, 501);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.btnViewDetails);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.lblUname);
             this.Controls.Add(this.lblWelcome);
-            this.Controls.Add(this.txtSearchD);
-            this.Controls.Add(this.lblSearchD);
-            this.Controls.Add(this.btnGoD);
             this.Controls.Add(this.deveGrid);
             this.Controls.Add(this.btnLogoutD);
             this.Controls.Add(this.btnViewD);
@@ -173,12 +151,10 @@
         private System.Windows.Forms.Button btnViewD;
         private System.Windows.Forms.Button btnLogoutD;
         private System.Windows.Forms.DataGridView deveGrid;
-        private System.Windows.Forms.Button btnGoD;
-        private System.Windows.Forms.Label lblSearchD;
-        private System.Windows.Forms.TextBox txtSearchD;
         private System.Windows.Forms.Label lblUname;
         private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnViewDetails;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

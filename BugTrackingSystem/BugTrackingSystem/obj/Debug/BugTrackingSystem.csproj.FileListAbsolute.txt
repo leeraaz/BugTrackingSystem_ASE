@@ -28,3 +28,4 @@ F:\Softwarica\sem 5\ASE\New folder\BugTrackingSystem\BugTrackingSystem\obj\Debug
 F:\Softwarica\sem 5\ASE\New folder\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.ReportingBugDeveloper.resources
 F:\Softwarica\sem 5\ASE\New folder\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.UpdateStaff.resources
 F:\Softwarica\sem 5\ASE\New folder\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.DeleteStaff.resources
+F:\Softwarica\sem 5\ASE\New folder\BugTrackingSystem\BugTrackingSystem\obj\Debug\BugTrackingSystem.BugFix.resources

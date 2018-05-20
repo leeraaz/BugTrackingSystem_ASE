@@ -69,7 +69,7 @@ namespace BugTrackingSystem
             }
             else
             {
-                string report = "insert into report(Project_Name,Class_File,Method,Line_Number,Code,Expected_Result,Actual_Result,Description,Status)" +
+                string report = "insert into report(Project_Name,Class_File,Method,Line_Number,Code,Expected_Result,Actual_Result,Description,Status,Report_By)" +
                                     "values('" + proName + "','" + classes + "','" + methods + "','" + line + "','" + codes + "','" + expected + "','" + actual + "','" + desc + "','" + status + "','" + reportby + "');";
 
                 db.DBConnect = db.DBConnection();
