@@ -43,7 +43,7 @@
             // btnLog
             // 
             this.btnLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLog.Location = new System.Drawing.Point(12, 173);
+            this.btnLog.Location = new System.Drawing.Point(12, 153);
             this.btnLog.Name = "btnLog";
             this.btnLog.Size = new System.Drawing.Size(127, 44);
             this.btnLog.TabIndex = 2;
@@ -65,7 +65,7 @@
             // btnLogoutT
             // 
             this.btnLogoutT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogoutT.Location = new System.Drawing.Point(12, 376);
+            this.btnLogoutT.Location = new System.Drawing.Point(14, 303);
             this.btnLogoutT.Name = "btnLogoutT";
             this.btnLogoutT.Size = new System.Drawing.Size(127, 44);
             this.btnLogoutT.TabIndex = 4;
@@ -110,7 +110,7 @@
             // btnProfile
             // 
             this.btnProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProfile.Location = new System.Drawing.Point(12, 239);
+            this.btnProfile.Location = new System.Drawing.Point(12, 203);
             this.btnProfile.Name = "btnProfile";
             this.btnProfile.Size = new System.Drawing.Size(127, 44);
             this.btnProfile.TabIndex = 17;
@@ -121,7 +121,7 @@
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(12, 300);
+            this.btnUpdate.Location = new System.Drawing.Point(12, 253);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(127, 44);
             this.btnUpdate.TabIndex = 18;

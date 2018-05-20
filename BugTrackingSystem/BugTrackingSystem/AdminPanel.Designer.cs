@@ -46,9 +46,9 @@
             // btnReportA
             // 
             this.btnReportA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReportA.Location = new System.Drawing.Point(11, 168);
+            this.btnReportA.Location = new System.Drawing.Point(12, 135);
             this.btnReportA.Name = "btnReportA";
-            this.btnReportA.Size = new System.Drawing.Size(173, 25);
+            this.btnReportA.Size = new System.Drawing.Size(173, 32);
             this.btnReportA.TabIndex = 2;
             this.btnReportA.Text = "View Reported Bug";
             this.btnReportA.UseVisualStyleBackColor = true;
@@ -56,7 +56,7 @@
             // btnLogout
             // 
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.Location = new System.Drawing.Point(12, 418);
+            this.btnLogout.Location = new System.Drawing.Point(11, 317);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(172, 33);
             this.btnLogout.TabIndex = 3;
@@ -67,7 +67,7 @@
             // btnStaffA
             // 
             this.btnStaffA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStaffA.Location = new System.Drawing.Point(11, 44);
+            this.btnStaffA.Location = new System.Drawing.Point(12, 66);
             this.btnStaffA.Name = "btnStaffA";
             this.btnStaffA.Size = new System.Drawing.Size(173, 28);
             this.btnStaffA.TabIndex = 4;
@@ -78,7 +78,7 @@
             // btnSolvedA
             // 
             this.btnSolvedA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSolvedA.Location = new System.Drawing.Point(11, 109);
+            this.btnSolvedA.Location = new System.Drawing.Point(12, 100);
             this.btnSolvedA.Name = "btnSolvedA";
             this.btnSolvedA.Size = new System.Drawing.Size(173, 29);
             this.btnSolvedA.TabIndex = 5;
@@ -107,7 +107,7 @@
             // btnAddProject
             // 
             this.btnAddProject.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddProject.Location = new System.Drawing.Point(11, 219);
+            this.btnAddProject.Location = new System.Drawing.Point(12, 173);
             this.btnAddProject.Name = "btnAddProject";
             this.btnAddProject.Size = new System.Drawing.Size(173, 30);
             this.btnAddProject.TabIndex = 9;
@@ -127,7 +127,7 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(11, 306);
+            this.btnDelete.Location = new System.Drawing.Point(11, 245);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(173, 30);
             this.btnDelete.TabIndex = 11;
@@ -145,7 +145,7 @@
             // btnDeleteProject
             // 
             this.btnDeleteProject.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteProject.Location = new System.Drawing.Point(12, 358);
+            this.btnDeleteProject.Location = new System.Drawing.Point(12, 281);
             this.btnDeleteProject.Name = "btnDeleteProject";
             this.btnDeleteProject.Size = new System.Drawing.Size(173, 30);
             this.btnDeleteProject.TabIndex = 13;
@@ -156,7 +156,7 @@
             // btnViewProject
             // 
             this.btnViewProject.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewProject.Location = new System.Drawing.Point(11, 255);
+            this.btnViewProject.Location = new System.Drawing.Point(11, 209);
             this.btnViewProject.Name = "btnViewProject";
             this.btnViewProject.Size = new System.Drawing.Size(173, 30);
             this.btnViewProject.TabIndex = 14;

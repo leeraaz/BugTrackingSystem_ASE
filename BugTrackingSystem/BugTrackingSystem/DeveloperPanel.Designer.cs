@@ -44,9 +44,9 @@
             // btnReportD
             // 
             this.btnReportD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReportD.Location = new System.Drawing.Point(12, 58);
+            this.btnReportD.Location = new System.Drawing.Point(12, 100);
             this.btnReportD.Name = "btnReportD";
-            this.btnReportD.Size = new System.Drawing.Size(151, 35);
+            this.btnReportD.Size = new System.Drawing.Size(151, 29);
             this.btnReportD.TabIndex = 0;
             this.btnReportD.Text = "Report Bug";
             this.btnReportD.UseVisualStyleBackColor = true;
@@ -55,7 +55,7 @@
             // btnViewD
             // 
             this.btnViewD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewD.Location = new System.Drawing.Point(12, 146);
+            this.btnViewD.Location = new System.Drawing.Point(12, 135);
             this.btnViewD.Name = "btnViewD";
             this.btnViewD.Size = new System.Drawing.Size(151, 32);
             this.btnViewD.TabIndex = 1;
@@ -66,7 +66,7 @@
             // btnLogoutD
             // 
             this.btnLogoutD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogoutD.Location = new System.Drawing.Point(12, 445);
+            this.btnLogoutD.Location = new System.Drawing.Point(12, 287);
             this.btnLogoutD.Name = "btnLogoutD";
             this.btnLogoutD.Size = new System.Drawing.Size(151, 32);
             this.btnLogoutD.TabIndex = 2;
@@ -104,7 +104,7 @@
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(12, 353);
+            this.btnUpdate.Location = new System.Drawing.Point(12, 249);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(151, 32);
             this.btnUpdate.TabIndex = 15;
@@ -115,7 +115,7 @@
             // btnViewDetails
             // 
             this.btnViewDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewDetails.Location = new System.Drawing.Point(12, 281);
+            this.btnViewDetails.Location = new System.Drawing.Point(12, 211);
             this.btnViewDetails.Name = "btnViewDetails";
             this.btnViewDetails.Size = new System.Drawing.Size(151, 32);
             this.btnViewDetails.TabIndex = 16;
@@ -133,7 +133,7 @@
             // btnSolveBug
             // 
             this.btnSolveBug.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSolveBug.Location = new System.Drawing.Point(12, 217);
+            this.btnSolveBug.Location = new System.Drawing.Point(12, 173);
             this.btnSolveBug.Name = "btnSolveBug";
             this.btnSolveBug.Size = new System.Drawing.Size(151, 32);
             this.btnSolveBug.TabIndex = 18;
