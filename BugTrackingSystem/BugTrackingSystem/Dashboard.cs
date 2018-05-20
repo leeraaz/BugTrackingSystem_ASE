@@ -14,6 +14,7 @@ namespace BugTrackingSystem
 {
     public partial class Dashboard : Form
     {
+        public static string usname = "";
         DatabaseConnection db = new DatabaseConnection();
         public Dashboard()
         {
@@ -55,37 +56,33 @@ namespace BugTrackingSystem
                 if (utype == "Admin")
                 {
                     //MessageBox.Show("User inserted.");
-                    user = txtUsername.Text;
+                    usname = txtUsername.Text;
                     AdminPanel ap = new AdminPanel();
                     ap.Show();
-                    ap.txtLogUser.Text = user;
                     this.Hide();
                 }
                 else if (utype == "Programmer")
                 {
                     //MessageBox.Show("You are a Programmer");
-                    user = txtUsername.Text;
+                    usname = txtUsername.Text;
                     ProgrammerPanel ap = new ProgrammerPanel();
                     ap.Show();
-                   // ap.txtLogUser.Text = user;
                     this.Hide();
                 }
                 else if (utype == "Developer")
                 {
                     //MessageBox.Show("You are a Developer ");
-                    user = txtUsername.Text;
+                    usname = txtUsername.Text;
                     DeveloperPanel ap = new DeveloperPanel();
                     ap.Show();
-                   // ap.txtLogUser.Text = user;
                     this.Hide();
                 }
                 else if (utype == "Tester")
                 {
                     //MessageBox.Show("You are a Tester");
-                    user = txtUsername.Text;
+                    usname = txtUsername.Text;
                     TesterPanel ap = new TesterPanel();
                     ap.Show();
-                    //ap.txtLogUser.Text = user;
                     this.Hide();
                 }
             }

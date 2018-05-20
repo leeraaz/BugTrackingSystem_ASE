@@ -32,16 +32,17 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnStaffA = new System.Windows.Forms.Button();
             this.btnSolvedA = new System.Windows.Forms.Button();
-            this.staffDetails = new System.Windows.Forms.DataGridView();
+            this.adminDataGrid = new System.Windows.Forms.DataGridView();
             this.lblWelcome = new System.Windows.Forms.Label();
-            this.txtLogUser = new System.Windows.Forms.TextBox();
             this.btnAddProject = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.staffDetails)).BeginInit();
+            this.lblUname = new System.Windows.Forms.Label();
+            this.btnDelete = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.adminDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // btnReportA
             // 
-            this.btnReportA.Location = new System.Drawing.Point(11, 116);
+            this.btnReportA.Location = new System.Drawing.Point(12, 151);
             this.btnReportA.Name = "btnReportA";
             this.btnReportA.Size = new System.Drawing.Size(106, 44);
             this.btnReportA.TabIndex = 2;
@@ -62,7 +63,7 @@
             // 
             this.btnStaffA.Location = new System.Drawing.Point(11, 44);
             this.btnStaffA.Name = "btnStaffA";
-            this.btnStaffA.Size = new System.Drawing.Size(106, 27);
+            this.btnStaffA.Size = new System.Drawing.Size(106, 47);
             this.btnStaffA.TabIndex = 4;
             this.btnStaffA.Text = "Staff Details";
             this.btnStaffA.UseVisualStyleBackColor = true;
@@ -70,20 +71,20 @@
             // 
             // btnSolvedA
             // 
-            this.btnSolvedA.Location = new System.Drawing.Point(11, 85);
+            this.btnSolvedA.Location = new System.Drawing.Point(11, 97);
             this.btnSolvedA.Name = "btnSolvedA";
-            this.btnSolvedA.Size = new System.Drawing.Size(106, 25);
+            this.btnSolvedA.Size = new System.Drawing.Size(106, 48);
             this.btnSolvedA.TabIndex = 5;
             this.btnSolvedA.Text = "View Solved Bug";
             this.btnSolvedA.UseVisualStyleBackColor = true;
             // 
-            // staffDetails
+            // adminDataGrid
             // 
-            this.staffDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.staffDetails.Location = new System.Drawing.Point(140, 44);
-            this.staffDetails.Name = "staffDetails";
-            this.staffDetails.Size = new System.Drawing.Size(743, 402);
-            this.staffDetails.TabIndex = 6;
+            this.adminDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.adminDataGrid.Location = new System.Drawing.Point(140, 44);
+            this.adminDataGrid.Name = "adminDataGrid";
+            this.adminDataGrid.Size = new System.Drawing.Size(743, 402);
+            this.adminDataGrid.TabIndex = 6;
             // 
             // lblWelcome
             // 
@@ -94,33 +95,44 @@
             this.lblWelcome.TabIndex = 7;
             this.lblWelcome.Text = "Welcome";
             // 
-            // txtLogUser
-            // 
-            this.txtLogUser.Location = new System.Drawing.Point(88, 10);
-            this.txtLogUser.Multiline = true;
-            this.txtLogUser.Name = "txtLogUser";
-            this.txtLogUser.ReadOnly = true;
-            this.txtLogUser.Size = new System.Drawing.Size(100, 20);
-            this.txtLogUser.TabIndex = 8;
-            // 
             // btnAddProject
             // 
-            this.btnAddProject.Location = new System.Drawing.Point(11, 166);
+            this.btnAddProject.Location = new System.Drawing.Point(11, 201);
             this.btnAddProject.Name = "btnAddProject";
-            this.btnAddProject.Size = new System.Drawing.Size(106, 23);
+            this.btnAddProject.Size = new System.Drawing.Size(106, 49);
             this.btnAddProject.TabIndex = 9;
             this.btnAddProject.Text = "Add Project";
             this.btnAddProject.UseVisualStyleBackColor = true;
+            this.btnAddProject.Click += new System.EventHandler(this.btnAddProject_Click);
+            // 
+            // lblUname
+            // 
+            this.lblUname.AutoSize = true;
+            this.lblUname.Location = new System.Drawing.Point(88, 13);
+            this.lblUname.Name = "lblUname";
+            this.lblUname.Size = new System.Drawing.Size(0, 13);
+            this.lblUname.TabIndex = 10;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(12, 256);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(106, 49);
+            this.btnDelete.TabIndex = 11;
+            this.btnDelete.Text = "Delete Staff";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.button1_Click);
             // 
             // AdminPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(917, 485);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.lblUname);
             this.Controls.Add(this.btnAddProject);
-            this.Controls.Add(this.txtLogUser);
             this.Controls.Add(this.lblWelcome);
-            this.Controls.Add(this.staffDetails);
+            this.Controls.Add(this.adminDataGrid);
             this.Controls.Add(this.btnSolvedA);
             this.Controls.Add(this.btnStaffA);
             this.Controls.Add(this.btnLogout);
@@ -128,7 +140,7 @@
             this.Name = "AdminPanel";
             this.Text = "AdminPanel";
             this.Load += new System.EventHandler(this.AdminPanel_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.staffDetails)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adminDataGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,9 +152,10 @@
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnStaffA;
         private System.Windows.Forms.Button btnSolvedA;
-        private System.Windows.Forms.DataGridView staffDetails;
+        private System.Windows.Forms.DataGridView adminDataGrid;
         private System.Windows.Forms.Label lblWelcome;
-        public System.Windows.Forms.TextBox txtLogUser;
         private System.Windows.Forms.Button btnAddProject;
+        private System.Windows.Forms.Label lblUname;
+        private System.Windows.Forms.Button btnDelete;
     }
 }

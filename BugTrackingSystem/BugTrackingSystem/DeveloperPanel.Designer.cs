@@ -31,13 +31,20 @@
             this.btnReportD = new System.Windows.Forms.Button();
             this.btnViewD = new System.Windows.Forms.Button();
             this.btnLogoutD = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.deveGrid = new System.Windows.Forms.DataGridView();
+            this.btnGoD = new System.Windows.Forms.Button();
+            this.lblSearchD = new System.Windows.Forms.Label();
+            this.txtSearchD = new System.Windows.Forms.TextBox();
+            this.lblUname = new System.Windows.Forms.Label();
+            this.lblWelcome = new System.Windows.Forms.Label();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnViewDetails = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.deveGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // btnReportD
             // 
-            this.btnReportD.Location = new System.Drawing.Point(12, 45);
+            this.btnReportD.Location = new System.Drawing.Point(12, 101);
             this.btnReportD.Name = "btnReportD";
             this.btnReportD.Size = new System.Drawing.Size(106, 47);
             this.btnReportD.TabIndex = 0;
@@ -47,16 +54,17 @@
             // 
             // btnViewD
             // 
-            this.btnViewD.Location = new System.Drawing.Point(12, 116);
+            this.btnViewD.Location = new System.Drawing.Point(12, 172);
             this.btnViewD.Name = "btnViewD";
             this.btnViewD.Size = new System.Drawing.Size(106, 44);
             this.btnViewD.TabIndex = 1;
             this.btnViewD.Text = "View Reported Bug";
             this.btnViewD.UseVisualStyleBackColor = true;
+            this.btnViewD.Click += new System.EventHandler(this.btnViewD_Click);
             // 
             // btnLogoutD
             // 
-            this.btnLogoutD.Location = new System.Drawing.Point(12, 190);
+            this.btnLogoutD.Location = new System.Drawing.Point(12, 339);
             this.btnLogoutD.Name = "btnLogoutD";
             this.btnLogoutD.Size = new System.Drawing.Size(106, 44);
             this.btnLogoutD.TabIndex = 2;
@@ -64,27 +72,98 @@
             this.btnLogoutD.UseVisualStyleBackColor = true;
             this.btnLogoutD.Click += new System.EventHandler(this.btnLogoutD_Click);
             // 
-            // dataGridView1
+            // deveGrid
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(172, 45);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(674, 431);
-            this.dataGridView1.TabIndex = 3;
+            this.deveGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.deveGrid.Location = new System.Drawing.Point(172, 45);
+            this.deveGrid.Name = "deveGrid";
+            this.deveGrid.Size = new System.Drawing.Size(674, 431);
+            this.deveGrid.TabIndex = 3;
+            // 
+            // btnGoD
+            // 
+            this.btnGoD.Location = new System.Drawing.Point(803, 12);
+            this.btnGoD.Name = "btnGoD";
+            this.btnGoD.Size = new System.Drawing.Size(43, 23);
+            this.btnGoD.TabIndex = 4;
+            this.btnGoD.Text = "GO";
+            this.btnGoD.UseVisualStyleBackColor = true;
+            // 
+            // lblSearchD
+            // 
+            this.lblSearchD.AutoSize = true;
+            this.lblSearchD.Location = new System.Drawing.Point(596, 17);
+            this.lblSearchD.Name = "lblSearchD";
+            this.lblSearchD.Size = new System.Drawing.Size(41, 13);
+            this.lblSearchD.TabIndex = 5;
+            this.lblSearchD.Text = "Search";
+            // 
+            // txtSearchD
+            // 
+            this.txtSearchD.Location = new System.Drawing.Point(652, 15);
+            this.txtSearchD.Name = "txtSearchD";
+            this.txtSearchD.Size = new System.Drawing.Size(136, 20);
+            this.txtSearchD.TabIndex = 6;
+            // 
+            // lblUname
+            // 
+            this.lblUname.AutoSize = true;
+            this.lblUname.Location = new System.Drawing.Point(71, 12);
+            this.lblUname.Name = "lblUname";
+            this.lblUname.Size = new System.Drawing.Size(0, 13);
+            this.lblUname.TabIndex = 14;
+            // 
+            // lblWelcome
+            // 
+            this.lblWelcome.AutoSize = true;
+            this.lblWelcome.Location = new System.Drawing.Point(12, 12);
+            this.lblWelcome.Name = "lblWelcome";
+            this.lblWelcome.Size = new System.Drawing.Size(52, 13);
+            this.lblWelcome.TabIndex = 13;
+            this.lblWelcome.Text = "Welcome";
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(12, 280);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(106, 44);
+            this.btnUpdate.TabIndex = 15;
+            this.btnUpdate.Text = "Update Details";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // btnViewDetails
+            // 
+            this.btnViewDetails.Location = new System.Drawing.Point(12, 230);
+            this.btnViewDetails.Name = "btnViewDetails";
+            this.btnViewDetails.Size = new System.Drawing.Size(106, 44);
+            this.btnViewDetails.TabIndex = 16;
+            this.btnViewDetails.Text = "View Details";
+            this.btnViewDetails.UseVisualStyleBackColor = true;
+            this.btnViewDetails.Click += new System.EventHandler(this.button2_Click);
             // 
             // DeveloperPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(858, 501);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnViewDetails);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.lblUname);
+            this.Controls.Add(this.lblWelcome);
+            this.Controls.Add(this.txtSearchD);
+            this.Controls.Add(this.lblSearchD);
+            this.Controls.Add(this.btnGoD);
+            this.Controls.Add(this.deveGrid);
             this.Controls.Add(this.btnLogoutD);
             this.Controls.Add(this.btnViewD);
             this.Controls.Add(this.btnReportD);
             this.Name = "DeveloperPanel";
             this.Text = "DeveloperPanel";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.DeveloperPanel_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.deveGrid)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -93,6 +172,13 @@
         private System.Windows.Forms.Button btnReportD;
         private System.Windows.Forms.Button btnViewD;
         private System.Windows.Forms.Button btnLogoutD;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView deveGrid;
+        private System.Windows.Forms.Button btnGoD;
+        private System.Windows.Forms.Label lblSearchD;
+        private System.Windows.Forms.TextBox txtSearchD;
+        private System.Windows.Forms.Label lblUname;
+        private System.Windows.Forms.Label lblWelcome;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnViewDetails;
     }
 }

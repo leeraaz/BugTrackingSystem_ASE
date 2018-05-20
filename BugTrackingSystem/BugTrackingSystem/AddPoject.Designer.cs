@@ -34,8 +34,8 @@
             this.lblStart = new System.Windows.Forms.Label();
             this.lblNewProject = new System.Windows.Forms.Label();
             this.txtProjectName = new System.Windows.Forms.TextBox();
-            this.dateTimePickerStart = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePickerEnd = new System.Windows.Forms.DateTimePicker();
+            this.startDate = new System.Windows.Forms.DateTimePicker();
+            this.estiDate = new System.Windows.Forms.DateTimePicker();
             this.lblAssignUser = new System.Windows.Forms.Label();
             this.cmbProjectType = new System.Windows.Forms.ComboBox();
             this.btnSaveN = new System.Windows.Forms.Button();
@@ -95,19 +95,23 @@
             this.txtProjectName.Size = new System.Drawing.Size(200, 20);
             this.txtProjectName.TabIndex = 5;
             // 
-            // dateTimePickerStart
+            // startDate
             // 
-            this.dateTimePickerStart.Location = new System.Drawing.Point(148, 88);
-            this.dateTimePickerStart.Name = "dateTimePickerStart";
-            this.dateTimePickerStart.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePickerStart.TabIndex = 7;
+            this.startDate.CustomFormat = "yyyy-MM-dd";
+            this.startDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.startDate.Location = new System.Drawing.Point(148, 88);
+            this.startDate.Name = "startDate";
+            this.startDate.Size = new System.Drawing.Size(200, 20);
+            this.startDate.TabIndex = 7;
             // 
-            // dateTimePickerEnd
+            // estiDate
             // 
-            this.dateTimePickerEnd.Location = new System.Drawing.Point(148, 128);
-            this.dateTimePickerEnd.Name = "dateTimePickerEnd";
-            this.dateTimePickerEnd.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePickerEnd.TabIndex = 8;
+            this.estiDate.CustomFormat = "yyyy-MM-dd";
+            this.estiDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.estiDate.Location = new System.Drawing.Point(148, 128);
+            this.estiDate.Name = "estiDate";
+            this.estiDate.Size = new System.Drawing.Size(200, 20);
+            this.estiDate.TabIndex = 8;
             // 
             // lblAssignUser
             // 
@@ -140,6 +144,7 @@
             this.btnSaveN.TabIndex = 11;
             this.btnSaveN.Text = "Save";
             this.btnSaveN.UseVisualStyleBackColor = true;
+            this.btnSaveN.Click += new System.EventHandler(this.btnSaveN_Click);
             // 
             // btnCancelN
             // 
@@ -154,12 +159,6 @@
             // cmbUser
             // 
             this.cmbUser.FormattingEnabled = true;
-            this.cmbUser.Items.AddRange(new object[] {
-            "Database",
-            "PHP",
-            "Java",
-            "C Sharp",
-            "HTML"});
             this.cmbUser.Location = new System.Drawing.Point(148, 197);
             this.cmbUser.Name = "cmbUser";
             this.cmbUser.Size = new System.Drawing.Size(200, 21);
@@ -175,8 +174,8 @@
             this.Controls.Add(this.btnSaveN);
             this.Controls.Add(this.cmbProjectType);
             this.Controls.Add(this.lblAssignUser);
-            this.Controls.Add(this.dateTimePickerEnd);
-            this.Controls.Add(this.dateTimePickerStart);
+            this.Controls.Add(this.estiDate);
+            this.Controls.Add(this.startDate);
             this.Controls.Add(this.txtProjectName);
             this.Controls.Add(this.lblNewProject);
             this.Controls.Add(this.lblStart);
@@ -198,8 +197,8 @@
         private System.Windows.Forms.Label lblStart;
         private System.Windows.Forms.Label lblNewProject;
         private System.Windows.Forms.TextBox txtProjectName;
-        private System.Windows.Forms.DateTimePicker dateTimePickerStart;
-        private System.Windows.Forms.DateTimePicker dateTimePickerEnd;
+        private System.Windows.Forms.DateTimePicker startDate;
+        private System.Windows.Forms.DateTimePicker estiDate;
         private System.Windows.Forms.Label lblAssignUser;
         private System.Windows.Forms.ComboBox cmbProjectType;
         private System.Windows.Forms.Button btnSaveN;

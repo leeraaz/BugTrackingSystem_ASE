@@ -33,7 +33,7 @@ namespace BugTrackingSystem
             string lastName = Convert.ToString(txtLastName.Text);
             string address = Convert.ToString(txtAdd.Text);
             string gender;
-            string dob = datePick.Value.ToShortDateString();
+            string dob = datePick.Text;
             string contact = Convert.ToString(txtContact.Text);
             string email = Convert.ToString(txtEmail.Text);
             string usertype = Convert.ToString(cmbUserType.Text);
@@ -161,6 +161,14 @@ namespace BugTrackingSystem
                     {
                         MessageBox.Show(er.Message);
                     }
+                    txtFirstName.Clear();
+                    txtLastName.Clear();
+                    txtAdd.Clear();
+                    txtContact.Clear();
+                    txtEmail.Clear();
+                    txtUsernameR.Clear();
+                    txtPasswordR.Clear();
+                    txtRePassword.Clear();
                 }
             }
         }

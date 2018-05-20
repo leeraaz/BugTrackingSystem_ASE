@@ -23,5 +23,17 @@ namespace BugTrackingSystem
             dash.Show();
             this.Close();
         }
+
+        private void btnReportD_Click(object sender, EventArgs e)
+        {
+            ReportingBugDeveloper report = new ReportingBugDeveloper();
+            report.Show();
+            this.Hide();
+        }
+
+        private void ProgrammerPanel_Load(object sender, EventArgs e)
+        {
+            lblUname.Text = Dashboard.usname;
+        }
     }
 }

@@ -312,7 +312,9 @@
             // 
             // datePick
             // 
+            this.datePick.CustomFormat = "yyyy-MM-dd";
             this.datePick.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datePick.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.datePick.Location = new System.Drawing.Point(183, 212);
             this.datePick.Name = "datePick";
             this.datePick.Size = new System.Drawing.Size(212, 26);
